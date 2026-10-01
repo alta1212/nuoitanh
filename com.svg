@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 560" role="img" aria-labelledby="title">
+  <title id="title">Tô cơm vui vẻ với trứng ốp la và đôi đũa</title>
+  <g fill="none" stroke="#382d25" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M111 106 474 43M125 131 490 70" stroke-width="12"/>
+    <path d="M113 244c12-92 95-148 198-145 108 3 187 66 188 157" fill="#fff4dc" stroke-width="7"/>
+    <path d="M187 165c26-43 86-58 127-22 29 25 30 74 3 101-40 40-111 22-130-24-8-19-8-38 0-55z" fill="#fff9ec" stroke-width="6"/>
+    <path d="M219 176c15-21 50-27 68-7 16 17 12 47-6 60-23 17-61 5-68-21-3-12-1-23 6-32z" fill="#e6a336" stroke-width="5"/>
+    <path d="M139 235c26-30 56-20 70 6 17-36 57-40 76-8 26-39 71-37 90 2 27-32 70-25 85 10" stroke-width="5"/>
+    <path d="M88 262h448c-10 121-74 213-221 213-145 0-213-91-227-213z" fill="#bd4a2c" stroke-width="8"/>
+    <path d="M112 289h397" stroke="#f8edda" stroke-width="5" opacity=".8"/>
+    <path d="M176 355c82 56 174 57 269 0" stroke="#f8edda" stroke-width="8" opacity=".9"/>
+    <circle cx="228" cy="312" r="10" fill="#382d25" stroke="none"/>
+    <circle cx="392" cy="312" r="10" fill="#382d25" stroke="none"/>
+    <path d="M270 335c23 25 54 25 79 0" stroke-width="7"/>
+    <path d="M120 389c-45 11-66 43-43 65 21 21 60-2 82-27M499 385c48 8 72 40 51 64-20 22-61 1-86-24" stroke-width="8"/>
+    <path d="M231 476c-5 23-17 40-36 52M397 475c5 23 17 40 36 52" stroke-width="9"/>
+    <path d="M170 527h38M420 527h38" stroke-width="9"/>
+    <path d="M92 178c-19-23-18-43 1-58M507 165c20-23 20-43 1-59" stroke-width="5"/>
+    <path d="M57 215 26 201M559 208l34-18" stroke-width="5"/>
+  </g>
+  <g fill="#b84427"><path d="m64 98 5 16 16 5-16 5-5 16-5-16-16-5 16-5z"/><path d="m548 102 4 13 13 4-13 4-4 13-4-13-13-4 13-4z"/></g>
+</svg>

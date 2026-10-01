@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 620 470" role="img" aria-labelledby="title">
+  <title id="title">Tanh ngồi làm việc trước laptop</title>
+  <defs><pattern id="grain" width="22" height="22" patternUnits="userSpaceOnUse"><circle cx="4" cy="5" r="1" fill="#2c4438" opacity=".12"/><circle cx="17" cy="15" r=".7" fill="#2c4438" opacity=".09"/></pattern></defs>
+  <rect x="0" y="0" width="620" height="470" fill="url(#grain)"/>
+  <path d="M50 408h520" stroke="#29483a" stroke-width="3"/>
+  <path d="M113 405c-6-92 4-161 38-229 27 19 43 47 47 83 10-48 36-85 75-111 18 66 3 126-44 181 34-33 73-46 116-39-12 55-51 91-117 109" fill="#73866e" stroke="#29483a" stroke-width="4" stroke-linejoin="round"/>
+  <g stroke="#29483a" stroke-width="3" fill="none"><path d="M157 201c22 70 35 135 39 198"/><path d="M258 174c-25 75-42 150-49 226"/><path d="M318 309c-42 29-73 58-94 90"/></g>
+  <path d="M145 405h120l-13 55h-94z" fill="#b5a67e" stroke="#29483a" stroke-width="4"/>
+  <path d="M329 251c0-70 37-116 90-116s86 40 83 112l-4 161H333z" fill="#344f42" stroke="#243d31" stroke-width="5"/>
+  <path d="M382 125c5-44 70-59 102-20 15 18 15 53-3 70-12 12-31 17-48 13-31-7-55-31-51-63z" fill="#d0a27e" stroke="#29483a" stroke-width="4"/>
+  <path d="M377 124c0-35 28-63 63-63 43 0 69 32 66 71-19-8-31-20-37-37-17 27-48 40-92 39z" fill="#263c33" stroke="#29483a" stroke-width="4"/>
+  <path d="M471 137c16-9 28 6 17 21" fill="none" stroke="#29483a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M397 143c12 8 26 9 39 3M409 164c12 6 24 5 35-2" fill="none" stroke="#29483a" stroke-width="3" stroke-linecap="round"/>
+  <path d="M377 226c-35 24-56 61-63 113l82 17 26-94" fill="#3c5d4d" stroke="#29483a" stroke-width="4"/>
+  <path d="M485 220c34 23 51 66 48 127l-74 3-10-87" fill="#3c5d4d" stroke="#29483a" stroke-width="4"/>
+  <path d="M215 289h195l35 120H250z" fill="#dddbc9" stroke="#29483a" stroke-width="5" stroke-linejoin="round"/>
+  <path d="M250 409h226" stroke="#29483a" stroke-width="7" stroke-linecap="round"/>
+  <circle cx="333" cy="349" r="9" fill="#a8ad93"/>
+  <path d="M420 330c-19 7-39 6-60-2M467 334c-12 5-25 5-39 0" fill="none" stroke="#c99672" stroke-width="11" stroke-linecap="round"/>
+  <g transform="translate(500 346)"><path d="M0 13h52v50H3z" fill="#f1eee0" stroke="#29483a" stroke-width="4"/><path d="M52 23c28-5 29 31 1 31" fill="none" stroke="#29483a" stroke-width="4"/><path d="M13 0c-8-17 8-19 2-34M31 0c-7-17 9-18 3-34" fill="none" stroke="#29483a" stroke-width="3" stroke-linecap="round"/></g>
+  <path d="M302 408h274" stroke="#29483a" stroke-width="7" stroke-linecap="round"/>
+</svg>
