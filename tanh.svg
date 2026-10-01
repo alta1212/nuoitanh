@@ -1,54 +1,161 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 500" role="img" aria-labelledby="title desc">
-  <title id="title">Tanh làm việc bên laptop</title>
-  <desc id="desc">Minh họa Tanh đang ngồi làm việc, cạnh một chậu cây và cốc cà phê trong căn phòng màu kem.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 680" width="700" height="680" role="img" aria-labelledby="t d" xmlns:c2pa="http://c2pa.org/manifest"><metadata><c2pa:manifest>AAAWgmp1bWIAAAAeanVtZGMycGEAEQAQgAAAqgA4m3EDYzJwYQAAABZcanVtYgAAAEdqdW1kYzJtYQARABCAAACqADibcQN1cm46YzJwYTpmNjIwNTYzMy01YmU1LTRlM2QtOGNiMC1kMDdlYWViNDgyMzAAAAADl2p1bWIAAAApanVtZGMyYXMAEQAQgAAAqgA4m3EDYzJwYS5hc3NlcnRpb25zAAAAALxqdW1iAAAARGp1bWRjYm9yABEAEIAAAKoAOJtxE2MycGEuaW5ncmVkaWVudC52MwAAAAAYYzJzaMhg/jizGUPTIhBdBE9r2ioAAABwY2JvcqNpZGM6Zm9ybWF0bWltYWdlL3N2Zyt4bWxqaW5zdGFuY2VJRHgseG1wOmlpZDo4Mjc3ZDRmYi1hNTI5LTQ5OGYtYjBlZS0yNzllNWNhNGE0NmFscmVsYXRpb25zaGlwaHBhcmVudE9mAAAB4mp1bWIAAABBanVtZGNib3IAEQAQgAAAqgA4m3ETYzJwYS5hY3Rpb25zLnYyAAAAABhjMnNoeTwATBrX4tsy02vVJt9r/AAAAZljYm9yomdhY3Rpb25zgqJmYWN0aW9ua2MycGEub3BlbmVkanBhcmFtZXRlcnOha2luZ3JlZGllbnRzgaJjdXJseC1zZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmluZ3JlZGllbnQudjNkaGFzaFggJodQ6FNFGNU2xAJqTXkkqaMqg+vAQ1pk3K247L78iR6kZmFjdGlvbngdY29tLmFudGhyb3BpYy5jbGF1ZGUucHJvdmlkZWRqcGFyYW1ldGVyc6F4H2NvbS5hbnRocm9waWMub3JpZ2luLWNvbmZpZGVuY2VndW5rbm93bmtkZXNjcmlwdGlvbnhmQ2xhdWRlIHByb3ZpZGVkIHRoaXMgZmlsZSBhdCB0aGUgcmVxdWVzdCBvZiBhIHVzZXIgYW5kIG1heSBoYXZlIGNyZWF0ZWQgb3IgbW9kaWZpZWQgdGhlIGZpbGUgY29udGVudHMubXNvZnR3YXJlQWdlbnShZG5hbWVmQ2xhdWRlcmFsbEFjdGlvbnNJbmNsdWRlZPUAAADIanVtYgAAAEBqdW1kY2JvcgARABCAAACqADibcRNjMnBhLmhhc2guZGF0YQAAAAAYYzJzaJUfUeih1J31AdSvL0gA0dMAAACAY2JvcqVjYWxnZnNoYTI1NmNwYWRNAAAAAAAAAAAAAAAAAGRoYXNoWCAglsslC2Uo8J5V2swEYnbvDEK+sGocoDpgA1+tOhOeamRuYW1lbmp1bWJmIG1hbmlmZXN0amV4Y2x1c2lvbnOBomVzdGFydBi3Zmxlbmd0aBkeBAAAAj5qdW1iAAAAJ2p1bWRjMmNsABEAEIAAAKoAOJtxA2MycGEuY2xhaW0udjIAAAACD2Nib3KlY2FsZ2ZzaGEyNTZpc2lnbmF0dXJleE1zZWxmI2p1bWJmPS9jMnBhL3VybjpjMnBhOmY2MjA1NjMzLTViZTUtNGUzZC04Y2IwLWQwN2VhZWI0ODIzMC9jMnBhLnNpZ25hdHVyZWppbnN0YW5jZUlEeCx4bXA6aWlkOjc0ODBiNzgzLWQ3ZWQtNDQ1Mi04MTI0LTBlZTIzMjM3MWZkNHJjcmVhdGVkX2Fzc2VydGlvbnODomN1cmx4LXNlbGYjanVtYmY9YzJwYS5hc3NlcnRpb25zL2MycGEuaW5ncmVkaWVudC52M2RoYXNoWCAmh1DoU0UY1TbEAmpNeSSpoyqD68BDWmTcrbjsvvyJHqJjdXJseCpzZWxmI2p1bWJmPWMycGEuYXNzZXJ0aW9ucy9jMnBhLmFjdGlvbnMudjJkaGFzaFggBYIYowASaR5pmE6PqVIzOoKLL5wXaeerkP95YSkGmxmiY3VybHgpc2VsZiNqdW1iZj1jMnBhLmFzc2VydGlvbnMvYzJwYS5oYXNoLmRhdGFkaGFzaFggO3bqPU54PU1Z+kOPB3Uqdtt/EEgfSg5zNloLNpk2qyJ0Y2xhaW1fZ2VuZXJhdG9yX2luZm+jZG5hbWVvQW50aHJvcGljIEZpbGVzZ3ZlcnNpb25lMS4wLjBrc3BlY1ZlcnNpb25lMi40LjAAABA4anVtYgAAAChqdW1kYzJjcwARABCAAACqADibcQNjMnBhLnNpZ25hdHVyZQAAABAIY2JvctKEWQISogEmGCFZAgowggIGMIIBjaADAgECAhRA5aAK7sI50L64g/oGQgU9Z1UTADAKBggqhkjOPQQDAzBJMRcwFQYDVQQKEw5BbnRocm9waWMsIFBCQzEuMCwGA1UEAxMlQW50aHJvcGljIENvbnRlbnQgQ3JlZGVudGlhbHMgUm9vdCBDQTAeFw0yNjA4MDcxODQzNTZaFw0yODA4MDYxOTQzNTZaMEQxFzAVBgNVBAoTDkFudGhyb3BpYywgUEJDMSkwJwYDVQQDEyBBbnRocm9waWMgQ2xhdWRlIENvbnRlbnQgU2lnbmluZzBZMBMGByqGSM49AgEGCCqGSM49AwEHA0IABJh6CmvLUBgFFNU0vUKlOVtE6djd17L5SuwX0LemFisBM3dkd/3cyjxFA3Qo5S46fX0/ihY0VZ7mfb9KF703t5OjWDBWMA4GA1UdDwEB/wQEAwIHgDAVBgNVHSUEDjAMBgorBgEEAYPoXgIBMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUzlHiBIFOZFsj+OPEz5o+nMHXXMIwCgYIKoZIzj0EAwMDZwAwZAIwMXMdFJ4BetLLVY7ORuE9noqbbAZOZn/aArXyTwFAZfKrPzxF2vPoJNf1+UCdg1XGAjBwX1zd9WGqYkqmL5SFqw1QySjr1zJfpJM9+1rdDwSPLMOPOjKuiXjoU/pUUeG9RwmhY3BhZFkNngAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAPZYQN1owgpFZEa26UJ1qUeAs1UMP1sf7IL+oHmZucq5BvNodtqDfCRrHjcL4mPkzKGatFKP0c/IIDNyh9bF1njC9LA=</c2pa:manifest></metadata>
+  <title id="t">Hồ sơ cá thể: Tanh</title>
+  <desc id="d">Thẻ hồ sơ quan sát một cá thể đang làm việc bên laptop, cạnh cốc cà phê và chậu cây, có con dấu đỏ CẦN TIẾP TẾ.</desc>
+
   <defs>
-    <pattern id="dots" width="24" height="24" patternUnits="userSpaceOnUse">
-      <circle cx="4" cy="5" r="1" fill="#29483a" opacity=".1"/>
-      <circle cx="17" cy="16" r=".7" fill="#29483a" opacity=".07"/>
+    <pattern id="dots" width="14" height="14" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="#D2C6AA"/>
     </pattern>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#29483a" flood-opacity=".12"/>
+    <pattern id="rules" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M0 19.5 H20" stroke="#CFC4AA" stroke-width="0.6" opacity="0.5"/>
+    </pattern>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="125%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#5B4E32" flood-opacity="0.22"/>
+    </filter>
+    <filter id="ink" x="-10%" y="-10%" width="120%" height="120%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" seed="11" result="n"/>
+      <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 -9 5.3" result="m"/>
+      <feComposite in="SourceGraphic" in2="m" operator="in"/>
+    </filter>
+    <filter id="blur" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7"/>
     </filter>
   </defs>
-  <rect width="680" height="500" rx="18" fill="#e8dfcc"/>
-  <rect x="14" y="14" width="652" height="472" rx="12" fill="url(#dots)" stroke="#000" stroke-opacity=".1"/>
-  <circle cx="541" cy="108" r="58" fill="#d7cfb9"/>
-  <path d="M39 419H641" stroke="#29483a" stroke-width="4" stroke-linecap="round"/>
-  <g filter="url(#shadow)">
-    <path d="M111 413c-7-99 5-178 42-251 30 21 48 55 51 96 14-56 44-100 89-130 18 73 0 143-55 209 42-36 87-50 135-40-20 63-65 101-136 115z" fill="#78907a" stroke="#29483a" stroke-width="5" stroke-linejoin="round"/>
-    <g fill="none" stroke="#29483a" stroke-width="3.5" stroke-linecap="round">
-      <path d="M157 185c27 79 42 154 45 226"/>
-      <path d="M276 153c-31 87-51 173-60 258"/>
-      <path d="M341 315c-52 32-89 64-111 98"/>
+
+  <!-- Nền ngoài -->
+  <rect width="700" height="680" fill="#F1EDE2"/>
+
+  <!-- Thẻ -->
+  <rect x="30" y="30" width="640" height="620" rx="6" fill="#E9E0CC" stroke="#B9AE96" stroke-width="1.5" filter="url(#shadow)"/>
+  <rect x="30" y="30" width="640" height="620" rx="6" fill="url(#rules)"/>
+  <rect x="40" y="40" width="620" height="600" rx="3" fill="none" stroke="#C4B99F" stroke-width="1"/>
+
+  <!-- Đầu thẻ -->
+  <text x="60" y="76" font-family="'Courier New', ui-monospace, monospace" font-size="12" font-weight="700" letter-spacing="2" fill="#3C4A42">HỒ SƠ CÁ THỂ</text>
+  <text x="640" y="76" text-anchor="end" font-family="'Courier New', ui-monospace, monospace" font-size="12" font-weight="700" letter-spacing="2" fill="#3C4A42">NT—001</text>
+  <line x1="30" y1="100" x2="670" y2="100" stroke="#B9AE96" stroke-width="1.2"/>
+
+  <!-- Khung minh hoạ -->
+  <rect x="58" y="114" width="584" height="408" rx="10" fill="#EFE7D6" stroke="#D3C8AE" stroke-width="1.2"/>
+  <rect x="58" y="114" width="584" height="408" rx="10" fill="url(#dots)" opacity="0.8"/>
+  <g stroke="#B9AE96" stroke-width="1.5" fill="none" stroke-linecap="round">
+    <path d="M70 134 V126 H78"/><path d="M630 126 H622 M630 126 V134"/>
+    <path d="M70 502 V510 H78"/><path d="M630 510 H622 M630 510 V502"/>
+  </g>
+
+  <!-- Chú thích -->
+  <line x1="92" y1="152" x2="226" y2="152" stroke="#3C4A42" stroke-width="1.2"/>
+  <text x="92" y="176" font-family="'Segoe UI', Arial, sans-serif" font-size="12.5" font-weight="700" letter-spacing="1.2" fill="#2F4A3F">TANH · NT—001</text>
+  <text x="92" y="196" font-family="'Segoe UI', Arial, sans-serif" font-size="11.5" fill="#4A5A50">Tình trạng: đang cố gắng</text>
+  <text x="626" y="140" text-anchor="end" font-family="Georgia, 'Times New Roman', serif" font-size="15" font-style="italic" fill="#2F4A3F">Quan sát trong môi trường tự nhiên</text>
+
+  <!-- Bóng bàn -->
+  <ellipse cx="355" cy="480" rx="260" ry="12" fill="#8A7A55" opacity="0.18" filter="url(#blur)"/>
+
+  <!-- Bàn -->
+  <rect x="96" y="456" width="520" height="14" rx="4" fill="#CDBF9F" stroke="#2F4A3F" stroke-width="3"/>
+
+  <!-- Cây -->
+  <g stroke="#2F4A3F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M196 392 C150 366 138 300 168 244 C196 290 212 350 196 392 Z" fill="#8AA18A"/>
+    <path d="M196 392 C190 330 200 276 236 220 C256 290 238 352 196 392 Z" fill="#6F8D74"/>
+    <path d="M196 392 C226 362 272 352 312 366 C296 400 244 410 196 392 Z" fill="#7D977E"/>
+    <path d="M196 392 C176 378 150 376 128 388 C150 400 176 404 196 392 Z" fill="#9AB09A"/>
+    <path d="M168 250 C178 300 188 346 194 388 M236 226 C228 290 214 340 198 388 M200 390 C238 376 270 368 306 366" fill="none" stroke-width="2" opacity="0.5"/>
+    <path d="M162 396 L232 396 L224 456 L170 456 Z" fill="#B5A582"/>
+    <rect x="154" y="388" width="86" height="14" rx="4" fill="#C7B895"/>
+    <path d="M178 420 H216" stroke-width="2" opacity="0.4" fill="none"/>
+  </g>
+
+  <!-- Quầng sau đầu -->
+  <circle cx="500" cy="192" r="46" fill="#DDD1B6" opacity="0.85"/>
+
+  <!-- Thân người -->
+  <g stroke="#2F4A3F" stroke-width="3.5" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M425 258 H465 V300 H425 Z" fill="#DDB08C"/>
+    <path d="M352 336 C352 290 392 270 445 270 C498 270 536 290 536 336 L540 454 L348 454 Z" fill="#C8B28F"/>
+    <path d="M418 272 L445 324 L472 272 Z" fill="#DDB08C" stroke-width="2.5"/>
+    <path d="M398 278 L424 270 L446 320 L424 330 Z" fill="#D9C7A6" stroke-width="3"/>
+    <path d="M492 278 L466 270 L444 320 L466 330 Z" fill="#D9C7A6" stroke-width="3"/>
+    <path d="M445 326 V454" stroke-width="2.5" fill="none"/>
+    <g fill="#2F4A3F" stroke="none"><circle cx="445" cy="352" r="2.8"/><circle cx="445" cy="388" r="2.8"/><circle cx="445" cy="424" r="2.8"/></g>
+  </g>
+
+  <!-- Đầu -->
+  <g transform="rotate(5 445 226)" stroke-linejoin="round" stroke-linecap="round">
+    <ellipse cx="399" cy="238" rx="8" ry="12" fill="#DDB08C" stroke="#2F4A3F" stroke-width="3"/>
+    <ellipse cx="491" cy="238" rx="8" ry="12" fill="#DDB08C" stroke="#2F4A3F" stroke-width="3"/>
+    <ellipse cx="445" cy="230" rx="47" ry="54" fill="#DDB08C" stroke="#2F4A3F" stroke-width="3.5"/>
+    <path d="M398 222 C391 174 412 152 450 152 C490 152 508 176 495 222 C492 202 484 194 472 191 C458 184 436 182 420 190 C408 196 402 208 398 222 Z" fill="#2B2A2C" stroke="#2B2A2C" stroke-width="3"/>
+    <path d="M424 164 C440 155 464 155 480 166" stroke="#5A5658" stroke-width="3.5" fill="none" opacity="0.8"/>
+    <path d="M414 220 q10 -5 24 -1" stroke="#2B2A2C" stroke-width="4" fill="none"/>
+    <path d="M454 219 q12 -4 24 1" stroke="#2B2A2C" stroke-width="4" fill="none"/>
+    <g fill="#F4E3C4" fill-opacity="0.22" stroke="#1F2630" stroke-width="3.5">
+      <rect x="410" y="227" width="32" height="25" rx="9"/>
+      <rect x="450" y="227" width="32" height="25" rx="9"/>
     </g>
-    <path d="M139 412h139l-16 70H157z" fill="#b7a882" stroke="#29483a" stroke-width="5"/>
-    <path d="M148 432h120" stroke="#8e815f" stroke-width="4"/>
+    <path d="M442 237 h8 M410 235 L399 233 M482 235 L491 233" stroke="#1F2630" stroke-width="3.2" fill="none"/>
+    <path d="M418 241 q8 5 16 0" stroke="#2F4A3F" stroke-width="3" fill="none"/>
+    <path d="M458 241 q8 5 16 0" stroke="#2F4A3F" stroke-width="3" fill="none"/>
+    <path d="M446 250 q-4 9 3 10" stroke="#B98C6C" stroke-width="2.6" fill="none"/>
+    <circle cx="418" cy="262" r="8" fill="#D98F7E" opacity="0.25"/>
+    <circle cx="474" cy="262" r="8" fill="#D98F7E" opacity="0.25"/>
+    <path d="M436 270 q10 6 20 0" stroke="#7A4A3C" stroke-width="3" fill="none"/>
   </g>
-  <g filter="url(#shadow)">
-    <path d="M355 268c0-74 38-126 101-126 61 0 99 50 97 124l-5 153H359z" fill="#355646" stroke="#29483a" stroke-width="5"/>
-    <path d="M398 129c0-49 36-86 82-86 47 0 84 36 84 85 0 43-32 76-77 76-49 0-89-31-89-75z" fill="#d1a17d" stroke="#29483a" stroke-width="5"/>
-    <path d="M392 128c0-53 38-91 89-91 57 0 92 42 87 98-23-10-39-28-49-52-24 34-66 52-127 51z" fill="#263f34" stroke="#29483a" stroke-width="5"/>
-    <path d="M529 135c18-10 33 8 19 25" fill="none" stroke="#29483a" stroke-width="4" stroke-linecap="round"/>
-    <g fill="none" stroke="#29483a" stroke-width="4" stroke-linecap="round">
-      <path d="M423 150c14 9 31 9 46 2"/>
-      <path d="M485 151c11 7 24 7 35 1"/>
-      <path d="M444 177c22 14 45 13 67-2"/>
-    </g>
-    <path d="M404 236c-42 26-67 70-72 130l94 13 29-104" fill="#406552" stroke="#29483a" stroke-width="5"/>
-    <path d="M534 233c39 26 61 73 59 137l-88 10-15-102" fill="#406552" stroke="#29483a" stroke-width="5"/>
-    <path d="M287 300h224l42 118H326z" fill="#f1eddf" stroke="#29483a" stroke-width="6" stroke-linejoin="round"/>
-    <circle cx="420" cy="361" r="10" fill="#a9b09a"/>
-    <path d="M509 350c-25 9-48 7-69-3M562 354c-15 6-29 5-44 0" fill="none" stroke="#cc9874" stroke-width="13" stroke-linecap="round"/>
-    <path d="M326 419h265" stroke="#29483a" stroke-width="8" stroke-linecap="round"/>
+
+  <!-- Laptop -->
+  <g stroke="#2F4A3F" stroke-width="4" stroke-linejoin="round">
+    <path d="M326 352 L486 352 L508 446 L304 446 Z" fill="#F3EDDF"/>
+    <path d="M338 364 L474 364 L490 436 L322 436 Z" fill="#EAE3D2" stroke-width="1.5"/>
+    <path d="M292 446 L520 446 L534 458 L278 458 Z" fill="#CFC3A3"/>
+    <circle cx="406" cy="402" r="9" fill="#B5B09E" stroke-width="2"/>
   </g>
-  <g transform="translate(566 350)" filter="url(#shadow)">
-    <path d="M0 16h56v53H3z" fill="#fffdf7" stroke="#29483a" stroke-width="5"/>
-    <path d="M56 25c31-5 32 34 1 34" fill="none" stroke="#29483a" stroke-width="5"/>
-    <path d="M15 2c-9-19 10-21 3-40M35 2c-8-19 10-21 4-40" fill="none" stroke="#b64532" stroke-width="4" stroke-linecap="round"/>
+
+  <!-- Hai cánh tay + bàn tay -->
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M350 398 Q380 422 418 412" stroke="#2F4A3F" stroke-width="29"/>
+    <path d="M350 398 Q380 422 418 412" stroke="#DDB08C" stroke-width="22"/>
+    <path d="M376 322 Q338 360 350 398" stroke="#2F4A3F" stroke-width="36"/>
+    <path d="M376 322 Q338 360 350 398" stroke="#C8B28F" stroke-width="29"/>
+    <path d="M345 389 L353 399" stroke="#B49A74" stroke-width="29"/>
+    <path d="M534 398 Q504 422 468 414" stroke="#2F4A3F" stroke-width="29"/>
+    <path d="M534 398 Q504 422 468 414" stroke="#DDB08C" stroke-width="22"/>
+    <path d="M508 322 Q546 360 534 398" stroke="#2F4A3F" stroke-width="36"/>
+    <path d="M508 322 Q546 360 534 398" stroke="#C8B28F" stroke-width="29"/>
+    <path d="M539 389 L531 399" stroke="#B49A74" stroke-width="29"/>
   </g>
-  <g transform="translate(67 55)">
-    <path d="M0 0h147" stroke="#29483a" stroke-width="2" opacity=".35"/>
-    <text y="26" fill="#29483a" font-family="Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="2">TANH · NT—001</text>
-    <text y="46" fill="#29483a" font-family="Arial, sans-serif" font-size="10">Tình trạng: đang cố gắng</text>
+  <g fill="#DDB08C" stroke="#2F4A3F" stroke-width="3">
+    <ellipse cx="426" cy="412" rx="16" ry="10"/>
+    <ellipse cx="460" cy="414" rx="16" ry="10"/>
   </g>
+
+  <!-- Cốc cà phê -->
+  <g stroke="#2F4A3F" stroke-width="3" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M600 410 q24 2 20 21 q-4 14 -22 12" fill="none" stroke-width="5.5"/>
+    <path d="M548 398 L602 398 L598 450 Q575 459 552 450 Z" fill="#F6F0E2"/>
+    <ellipse cx="575" cy="398" rx="27" ry="6" fill="#F6F0E2"/>
+    <ellipse cx="575" cy="399.5" rx="21" ry="3.8" fill="#6B4430" stroke="none"/>
+    <path d="M556 424 H594" stroke="#B8483A" stroke-width="3" opacity="0.75" fill="none"/>
+  </g>
+  <g stroke="#B8483A" stroke-width="3" fill="none" stroke-linecap="round" opacity="0.85">
+    <path d="M565 384 q-7 -9 0 -18 q7 -9 0 -18"/>
+    <path d="M582 384 q-7 -9 0 -18 q7 -9 0 -18"/>
+  </g>
+
+  <!-- Con dấu -->
+  <g transform="translate(574 266) rotate(-14)" filter="url(#ink)" fill="none" stroke="#B8483A" opacity="0.95">
+    <circle r="54" stroke-width="4.5"/>
+    <circle r="46" stroke-width="1.5"/>
+    <text y="-6" text-anchor="middle" fill="#B8483A" stroke="none" font-family="'Segoe UI', Arial, sans-serif" font-size="25" font-weight="800" textLength="48" lengthAdjust="spacingAndGlyphs">CẦN</text>
+    <text y="18" text-anchor="middle" fill="#B8483A" stroke="none" font-family="'Segoe UI', Arial, sans-serif" font-size="20" font-weight="800" textLength="74" lengthAdjust="spacingAndGlyphs">TIẾP TẾ</text>
+    <line x1="-30" y1="26" x2="30" y2="26" stroke-width="1.2"/>
+    <text y="38" text-anchor="middle" fill="#B8483A" stroke="none" font-family="'Courier New', monospace" font-size="6.5" font-weight="700" textLength="56" lengthAdjust="spacingAndGlyphs">HANDLE WITH CARE</text>
+  </g>
+
+  <!-- Chân thẻ -->
+  <line x1="30" y1="548" x2="670" y2="548" stroke="#B9AE96" stroke-width="1.2"/>
+  <text x="60" y="592" font-family="'Segoe UI', Arial, sans-serif" font-size="25" font-weight="700" fill="#2F4A3F">Tanh</text>
+  <text x="60" y="620" font-family="Georgia, 'Times New Roman', serif" font-size="16" fill="#3C4A42">Homo sapiens · phiên bản hay đói</text>
+  <rect x="466" y="588" width="174" height="30" rx="2" fill="#2F4A3F"/>
+  <text x="553" y="607" text-anchor="middle" font-family="'Courier New', ui-monospace, monospace" font-size="11" font-weight="700" fill="#EFE7D6" textLength="148" lengthAdjust="spacingAndGlyphs">CÒN THỞ, CÒN DEADLINE</text>
 </svg>
