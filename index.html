@@ -46,7 +46,7 @@
     <section class="donation-section top-donation" id="tiep-te" aria-labelledby="donation-title">
       <div class="wrap donation-grid">
         <div class="donation-copy">
-          <p class="eyebrow">02 — HÀNH ĐỘNG VÌ CHIẾC BỤNG</p>
+          <p class="eyebrow">01 — HÀNH ĐỘNG VÌ CHIẾC BỤNG</p>
           <h2 id="donation-title">Một bữa cơm.<br><em>Rất nhiều biết ơn.</em></h2>
           <p>Chọn một mức tiếp tế hoặc nhập số tiền bạn muốn.<br>Mã QR sẽ cập nhật ngay theo lựa chọn.</p>
           <div class="support-options" role="group" aria-label="Chọn mức tiếp tế">
@@ -71,7 +71,18 @@
       </div>
     </section>
     <section class="hero wrap" aria-labelledby="hero-title">
-      <div class="edition mono"><span>DỰ ÁN BẢO TỒN ĐỜI THƯỜNG</span><span>EST. 2026 <span aria-hidden="true"> / </span> VIỆT NAM</span></div>
+    <div class="edition mono">
+      <span>DỰ ÁN BẢO TỒN ĐỜI THƯỜNG</span>
+      <span>
+        EST. <span id="year"></span>
+        <span aria-hidden="true"> / </span>
+        VIỆT NAM
+      </span>
+    </div>
+
+    <script>
+      year.textContent = new Date().getFullYear();
+    </script>
       <div class="hero-grid">
         <div class="hero-copy">
           <p class="eyebrow"><span class="status-dot"></span> MỘT CÁ THỂ ĐANG CẦN BẠN</p>
@@ -99,7 +110,7 @@
     </section>
 
     <section class="profile-section wrap section-space" id="ho-so" aria-labelledby="profile-title">
-      <div class="section-intro"><p class="eyebrow">01 — TÌM HIỂU TRƯỚC KHI NUÔI</p><h2 id="profile-title">Không quý hiếm.<br>Nhưng <em>đáng được nuôi.</em></h2><p>Tanh là một cá thể khá dễ chăm sóc. Chỉ cần đủ cơm, đủ ngủ và đôi lúc được nghe: “Thôi, hôm nay để tôi mời.”</p><span class="hand-note">Chưa biết cứu thế giới,<br>nhưng biết rửa bát. <span aria-hidden="true">↗</span></span></div>
+      <div class="section-intro"><p class="eyebrow">02 — TÌM HIỂU TRƯỚC KHI NUÔI</p><h2 id="profile-title">Không quý hiếm.<br>Nhưng <em>đáng được nuôi.</em></h2><p>Tanh là một cá thể khá dễ chăm sóc. Chỉ cần đủ cơm, đủ ngủ và đôi lúc được nghe: “Thôi, hôm nay để tôi mời.”</p><span class="hand-note">Chưa biết cứu thế giới,<br>nhưng biết rửa bát. <span aria-hidden="true">↗</span></span></div>
       <div class="profile-notes">
         <article><span class="note-number mono">A.</span><div><h3>Tập tính sinh hoạt</h3><p>Hoạt động tốt sau ly cà phê đầu tiên. Có thể ngồi im hàng giờ trước laptop, nhưng sẽ xuất hiện ngay khi nghe “ăn không?”.</p></div></article>
         <article><span class="note-number mono">B.</span><div><h3>Phương pháp chăm sóc</h3><p>Cho ăn đều đặn. Động viên vừa đủ. Tránh hỏi “bao giờ giàu?” trong lúc cá thể đang ăn mì gói.</p></div></article>
