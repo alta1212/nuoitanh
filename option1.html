@@ -13,16 +13,36 @@
 </head>
 <body class="food">
   <a class="skip-link" href="#main">Đến nội dung chính</a>
-  <header class="site-header wrap"><a class="wordmark" href="option1.html"><span class="brand-symbol" aria-hidden="true">✳</span> nuôi tanh.</a><nav aria-label="Điều hướng chính"><a href="#thuc-don">Thực đơn tiếp tế</a><a href="#cam-ket">Lời hứa của Tanh</a></nav><a class="button button-small" href="#tiep-te">Mời Tanh ăn cơm <span aria-hidden="true">↗</span></a></header>
+  <header class="site-header wrap"><div class="brand-lockup"><a class="wordmark" href="option1.html"><span class="brand-symbol" aria-hidden="true">✳</span> nuôi tanh.</a><span class="brand-note"><strong>Tanh</strong> là viết tắt của Tuấn Anh</span></div><nav aria-label="Điều hướng chính"><a href="#thuc-don">Thực đơn tiếp tế</a><a href="#cam-ket">Lời hứa của Tanh</a></nav><a class="button button-small" href="#tiep-te">Mời Tanh ăn cơm <span aria-hidden="true">↗</span></a></header>
   <main id="main">
-    <section class="quick-support wrap" id="tiep-te" aria-labelledby="quick-support-title">
-      <div>
-        <p class="eyebrow">MỜI TANH MỘT BỮA NGAY NÀO</p>
-        <h2 id="quick-support-title">Quét một mã.<br><em>Ấm một chiếc bụng.</em></h2>
-        <p>Mở ngân hàng hoặc MoMo để quét QR.<br>Bạn nhập số tiền muốn mời, Tanh nhận bằng cả tấm lòng.</p>
-        <a class="button" href="qr.png" download="QR-nuoi-Tanh.png">Tải mã QR về máy <span aria-hidden="true">↓</span></a>
+    <section class="donation-section top-donation" id="tiep-te" aria-labelledby="donation-title">
+      <div class="wrap donation-grid">
+        <div class="donation-copy">
+          <p class="eyebrow">QUÉT MỘT MÃ · ẤM MỘT CHIẾC BỤNG</p>
+          <h2 id="donation-title">Bữa này,<br><em>bạn mời nhé?</em></h2>
+          <p>Chọn một món hoặc nhập số tiền bạn muốn.<br>Mã QR sẽ cập nhật ngay theo lựa chọn.</p>
+          <div class="support-options" role="group" aria-label="Chọn món tiếp tế">
+            <button class="support-option" type="button" data-amount="15000" data-label="Cứu gói mì" aria-pressed="false"><span class="option-icon" aria-hidden="true">♨</span><span><strong>Cứu gói mì</strong><small>Qua cơn đói, tới cơn vui</small></span><b>15k</b></button>
+            <button class="support-option" type="button" data-amount="35000" data-label="Bao ly cà phê" aria-pressed="false"><span class="option-icon" aria-hidden="true">☕</span><span><strong>Bao ly cà phê</strong><small>Tỉnh người, sáng ý</small></span><b>35k</b></button>
+            <button class="support-option" type="button" data-amount="50000" data-label="Tài trợ bữa cơm" aria-pressed="true"><span class="option-icon" aria-hidden="true">♡</span><span><strong>Tài trợ bữa cơm</strong><small>No bụng, ấm lòng</small></span><b>50k</b></button>
+          </div>
+          <div class="custom-support">
+            <label for="custom-amount">Hoặc nhập số tiền tùy chọn</label>
+            <div><input id="custom-amount" type="number" inputmode="numeric" min="2000" step="1000" placeholder="Tối thiểu 2.000đ" data-custom-amount><button type="button" data-custom-submit>Áp dụng</button></div>
+            <small data-custom-error aria-live="polite">Tối thiểu 2.000đ.</small>
+          </div>
+          <p class="donation-footnote">Đây là lời mời cơm cho cá nhân Tanh, hoàn toàn tự nguyện.</p>
+        </div>
+        <div class="qr-card">
+          <div class="receipt-header mono"><span>HÓA ĐƠN CỦA SỰ DỄ THƯƠNG</span><span>VIETQR</span></div>
+          <h3 data-selected-label>Tài trợ bữa cơm</h3>
+          <p class="qr-instruction">Mở ứng dụng ngân hàng để quét mã</p>
+          <a data-qr-link href="https://img.vietqr.io/image/TCB-1212141000-compact.png?amount=50000&amp;addInfo=cam%20on%20da%20nuoi%20Tanh" target="_blank" rel="noopener" class="qr-image-link" aria-label="Mở mã VietQR kích thước đầy đủ"><img data-qr-image src="https://img.vietqr.io/image/TCB-1212141000-compact.png?amount=50000&amp;addInfo=cam%20on%20da%20nuoi%20Tanh" width="512" height="512" alt="Mã VietQR chuyển tiền nuôi Tanh" fetchpriority="high"></a>
+          <div class="receipt-total"><span>Số tiền trên QR</span><strong data-amount-display>50.000đ</strong></div>
+          <p class="amount-help" data-amount-help aria-live="polite">QR đã tạo với số tiền 50.000đ.</p>
+          <p class="receipt-bottom mono">TCB · 1212141000 · CẢM ƠN ĐÃ NUÔI TANH</p>
+        </div>
       </div>
-      <a href="qr.png" target="_blank" rel="noopener" class="qr-image-link" aria-label="Mở ảnh QR nhận tiền kích thước đầy đủ"><img src="qr.png" width="1254" height="1254" alt="Mã QR nhận tiền của Tanh, hỗ trợ MoMo và VietQR" fetchpriority="high"></a>
     </section>
     <section class="food-hero wrap">
       <div class="food-hero-copy"><p class="eyebrow"><span class="status-dot"></span> BẾP ĐÃ MỞ. BỤNG ĐANG CHỜ.</p><h1>Một chiếc<br><em>bụng đói.</em><br>Nhiều chiếc<br>deadline<span class="orange-dot">.</span></h1><p>Bạn không thể giải quyết mọi vấn đề của Tanh.<br>Nhưng bạn có thể giải quyết bữa trưa.</p><a href="#tiep-te" class="button">Để bữa này tôi lo <span aria-hidden="true">↗</span></a><span class="food-hero-note">Có thực mới vực được deadline.</span></div>
@@ -37,7 +57,6 @@
       </div>
     </section>
     <section class="food-promises wrap" id="cam-ket"><span class="promise-mark" aria-hidden="true">✳</span><div><p class="eyebrow">LỜI HỨA TỪ MỘT CHIẾC BỤNG</p><h2>Ăn ngon. Ngủ đủ.<br><em>Có deadline thì tính sau.</em></h2></div><p>Tiền mời cơm sẽ được dùng cho cuộc sống hằng ngày của Tanh. Không hứa làm điều vĩ đại. Chỉ hứa trân trọng từng bữa được mời.</p></section>
-    <section class="donation-section" aria-labelledby="donation-title"><div class="wrap donation-grid"><div class="donation-copy"><p class="eyebrow">QUÉT MỘT MÃ · ẤM MỘT CHIẾC BỤNG</p><h2 id="donation-title">Bữa này,<br><em>bạn mời nhé?</em></h2><p>Chọn một món bên dưới, rồi quét QR ở đầu trang.<br>Bất kể bao nhiêu, Tanh cũng cảm ơn thật nhiều.</p><div class="support-options" role="group" aria-label="Chọn món tiếp tế gợi ý"><button class="support-option" type="button" data-amount="15000" data-label="Cứu gói mì" aria-pressed="false"><span class="option-icon" aria-hidden="true">♨</span><span><strong>Cứu gói mì</strong><small>Qua cơn đói, tới cơn vui</small></span><b>15k</b></button><button class="support-option" type="button" data-amount="35000" data-label="Bao ly cà phê" aria-pressed="true"><span class="option-icon" aria-hidden="true">☕</span><span><strong>Bao ly cà phê</strong><small>Tỉnh người, sáng ý</small></span><b>35k</b></button><button class="support-option" type="button" data-amount="50000" data-label="Tài trợ bữa cơm" aria-pressed="false"><span class="option-icon" aria-hidden="true">♡</span><span><strong>Tài trợ bữa cơm</strong><small>No bụng, ấm lòng</small></span><b>50k</b></button></div><p class="donation-footnote">Đây là lời mời cơm cho cá nhân Tanh, hoàn toàn tự nguyện.</p></div><div class="qr-card"><div class="receipt-header mono"><span>HÓA ĐƠN CỦA SỰ DỄ THƯƠNG</span><span>♡</span></div><h3 data-selected-label>Bao ly cà phê</h3><p class="qr-instruction">Chọn mức gợi ý, rồi quét mã ở đầu trang.</p><div class="receipt-total"><span>Bữa vui gợi ý</span><strong data-amount-display>35.000đ</strong></div><p class="amount-help" data-amount-help aria-live="polite">Nhập 35.000đ trong ứng dụng, hoặc số tiền bạn muốn.</p><a class="button download-button" href="#tiep-te">Quét QR ở đầu trang <span aria-hidden="true">↑</span></a><p class="receipt-bottom mono">TỔNG CỘNG: MỘT CHIẾC BỤNG BIẾT ƠN</p></div></div></section>
     <section class="goodwill wrap"><span class="goodwill-flower" aria-hidden="true">♡</span><div><p class="eyebrow">KHÔNG MỜI CƠM CŨNG ĐƯỢC</p><h2>Mời Tanh một chút vui đi.</h2><p data-cheer-message aria-live="polite">Một lời động viên cũng đủ làm ngày hôm nay ngon hơn.</p></div><button class="button button-outline" type="button" data-cheer>Gửi chút động viên <span aria-hidden="true">♡</span></button></section>
   </main>
   <footer class="site-footer wrap"><a href="option1.html" class="wordmark"><span class="brand-symbol" aria-hidden="true">✳</span> nuôi tanh.</a><p>Được nuôi bằng cơm. Được thương bằng tấm lòng.</p><span class="mono">CẢM ƠN VÌ ĐÃ GHÉ BẾP ♡</span></footer>
