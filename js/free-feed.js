@@ -16,6 +16,9 @@ const freeFeedLinks = [
   "https://s.shopee.vn/7VGpjSti9v",
   "https://s.shopee.vn/3B7qZVACx6",
   "https://s.shopee.vn/30oQNCAqI5",
+  "https://s.shopee.vn/2gBb4AHrWY",
+  "https://s.shopee.vn/7KxQcn8Ead",
+  "https://s.shopee.vn/7faH1Q2A5g"
 ];
 
 const freeFeedButton = document.querySelector("[data-free-feed]");
