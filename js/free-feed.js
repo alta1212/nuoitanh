@@ -1,31 +1,35 @@
 const freeFeedLinks = [
-  "https://s.shopee.vn/6AlS7sfDUR",
-  "https://s.shopee.vn/2LYjYnQ5uY",
-  "https://s.shopee.vn/6L4sK7h5ij",
-  "https://s.shopee.vn/4fweLD8ktE",
-  "https://s.shopee.vn/905dVDZecO",
-  "https://s.shopee.vn/40gxY4RQFE",
-  "https://s.shopee.vn/20vtAPKkHx",
-  "https://s.shopee.vn/4LJnwiGgRF",
-  "https://s.shopee.vn/6q18vK37QR",
-  "https://s.shopee.vn/40gxY80EWI",
-  "https://s.shopee.vn/6L4sKQzCCx",
-  "https://s.shopee.vn/9fLKIZze3a",
-  "https://s.shopee.vn/AKb15pwIcK",
-  "https://s.shopee.vn/8AWWVvwp1W",
-  "https://s.shopee.vn/7VGpjSti9v",
-  "https://s.shopee.vn/3B7qZVACx6",
-  "https://s.shopee.vn/30oQNCAqI5",
-  "https://s.shopee.vn/2gBb4AHrWY",
-  "https://s.shopee.vn/7KxQcn8Ead",
-  "https://s.shopee.vn/7faH1Q2A5g"
-];
+  "6AlS7sfDUR", "2LYjYnQ5uY", "6L4sK7h5ij", "4fweLD8ktE", "905dVDZecO",
+  "40gxY4RQFE", "20vtAPKkHx", "4LJnwiGgRF", "6q18vK37QR", "40gxY80EWI",
+  "6L4sKQzCCx", "9fLKIZze3a", "AKb15pwIcK", "8AWWVvwp1W", "7VGpjSti9v",
+  "3B7qZVACx6", "30oQNCAqI5", "2gBb4AHrWY", "7KxQcn8Ead", "7faH1Q2A5g",
+].map((code, index) => ({
+  code,
+  title: `Sản phẩm tiếp tế số ${String(index + 1).padStart(2, "0")}`,
+  description: "Mở trang Shopee để xem ảnh, giá và thông tin mới nhất.",
+  url: `https://s.shopee.vn/${code}`,
+}));
 
-const freeFeedButton = document.querySelector("[data-free-feed]");
-
-freeFeedButton?.addEventListener("click", () => {
+function openRandomProduct() {
   const randomValue = new Uint32Array(1);
   crypto.getRandomValues(randomValue);
   const randomIndex = randomValue[0] % freeFeedLinks.length;
-  window.open(freeFeedLinks[randomIndex], "_blank", "noopener");
-});
+  window.open(freeFeedLinks[randomIndex].url, "_blank", "noopener");
+}
+
+document.querySelector("[data-free-feed]")?.addEventListener("click", openRandomProduct);
+
+const productGrid = document.querySelector("[data-product-grid]");
+if (productGrid) {
+  productGrid.innerHTML = freeFeedLinks.map((product, index) => `
+    <article class="product-card">
+      <div class="preview-image" aria-hidden="true"><span>SP</span><b>${String(index + 1).padStart(2, "0")}</b></div>
+      <div class="preview-body">
+        <p class="preview-domain">shopee.vn · liên kết tiếp tế</p>
+        <h3>${product.title}</h3>
+        <p class="preview-description">${product.description}</p>
+        <p class="preview-url">${product.url}</p>
+        <a class="product-link" href="${product.url}" target="_blank" rel="noopener">Xem sản phẩm <span aria-hidden="true">↗</span></a>
+      </div>
+    </article>`).join("");
+}

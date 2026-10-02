@@ -177,6 +177,9 @@ h2 {
 }
 
 .action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 54px;
   padding: 0 22px;
   border: 1px solid var(--ink);
@@ -188,9 +191,23 @@ h2 {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
+  text-decoration: none;
   transition:
     transform 160ms ease,
     background 160ms ease;
+}
+.action-row,
+.free-feed-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.action-secondary {
+  color: var(--ink);
+  background: transparent;
+}
+.action-secondary:hover {
+  color: var(--button-text);
 }
 
 .action:hover {
