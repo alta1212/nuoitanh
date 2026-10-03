@@ -90,7 +90,7 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
-.home-page main {
+main {
   min-width: 0;
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(360px, 0.85fr);
@@ -118,7 +118,7 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
-.home-page h1 {
+h1 {
   max-width: 720px;
   margin: 0;
   font-size: clamp(48px, 7vw, 94px);
@@ -162,7 +162,7 @@ input:focus-visible {
   transform: rotate(9deg);
 }
 
-.home-page h2 {
+h2 {
   margin: 0;
   font-size: clamp(28px, 4vw, 48px);
   letter-spacing: -0.04em;
@@ -177,9 +177,6 @@ input:focus-visible {
 }
 
 .action {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
   min-height: 54px;
   padding: 0 22px;
   border: 1px solid var(--ink);
@@ -191,23 +188,9 @@ input:focus-visible {
   letter-spacing: 0.04em;
   text-transform: uppercase;
   cursor: pointer;
-  text-decoration: none;
   transition:
     transform 160ms ease,
     background 160ms ease;
-}
-.action-row,
-.free-feed-actions {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-.action-secondary {
-  color: var(--ink);
-  background: transparent;
-}
-.action-secondary:hover {
-  color: var(--button-text);
 }
 
 .action:hover {
@@ -396,7 +379,7 @@ input:focus-visible {
     padding: 14px 16px;
   }
 
-  .home-page main {
+  main {
     grid-template-columns: 1fr;
   }
 
@@ -408,7 +391,7 @@ input:focus-visible {
     border-bottom: 1px solid var(--ink);
   }
 
-  .home-page h1 {
+  h1 {
     font-size: clamp(42px, 13vw, 68px);
   }
 
