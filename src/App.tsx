@@ -1,29 +1,24 @@
 import { useEffect, useState } from "react";
-import { parseAmount } from "./amount";
+import {
+  formatAmountInput,
+  normalizeAmountInput,
+  parseAmount,
+} from "./amount";
+import FreeFeedPage from "./FreeFeedPage";
+import { products } from "./products";
 
 const amounts = [15_000, 35_000, 50_000];
-const links = [
-  "https://s.shopee.vn/6AlS7sfDUR",
-  "https://s.shopee.vn/2LYjYnQ5uY",
-  "https://s.shopee.vn/6L4sK7h5ij",
-  "https://s.shopee.vn/4fweLD8ktE",
-  "https://s.shopee.vn/905dVDZecO",
-  "https://s.shopee.vn/40gxY4RQFE",
-  "https://s.shopee.vn/20vtAPKkHx",
-  "https://s.shopee.vn/4LJnwiGgRF",
-  "https://s.shopee.vn/6q18vK37QR",
-  "https://s.shopee.vn/40gxY80EWI",
-  "https://s.shopee.vn/6L4sKQzCCx",
-  "https://s.shopee.vn/9fLKIZze3a",
-  "https://s.shopee.vn/AKb15pwIcK",
-  "https://s.shopee.vn/8AWWVvwp1W",
-  "https://s.shopee.vn/7VGpjSti9v",
-  "https://s.shopee.vn/3B7qZVACx6",
-  "https://s.shopee.vn/30oQNCAqI5",
-];
 const qrBase = "https://img.vietqr.io/image/TCB-1212141000-compact.png";
 
 export default function App() {
+  return window.location.pathname.startsWith("/free-feed") ? (
+    <FreeFeedPage />
+  ) : (
+    <HomePage />
+  );
+}
+
+function HomePage() {
   const [status, setStatus] = useState("Trạng thái: sẵn sàng tiếp nhận lòng tốt.");
   const [amount, setAmount] = useState(50_000);
   const [customAmount, setCustomAmount] = useState("");
@@ -37,7 +32,11 @@ export default function App() {
       const value = parseAmount(customAmount);
       if (value === null) {
         setError(true);
-        setMessage("Bank không cho chuyển dưới 2k =)) nhiều hơn đi");
+        setMessage(
+          Number(customAmount) < 2_000
+            ? "Bank không cho chuyển dưới 2k =)) nhiều hơn đi"
+            : "Số tiền này lớn quá, nhập ít hơn nhé.",
+        );
         return;
       }
 
@@ -51,7 +50,11 @@ export default function App() {
   function feedForFree() {
     const randomValue = new Uint32Array(1);
     crypto.getRandomValues(randomValue);
-    window.open(links[randomValue[0] % links.length], "_blank", "noopener");
+    window.open(
+      products[randomValue[0] % products.length].url,
+      "_blank",
+      "noopener",
+    );
     setStatus("Đã mở nhiệm vụ. Tanh xin ghi nhận công lao.");
   }
 
@@ -63,9 +66,10 @@ export default function App() {
   }
 
   function changeCustomAmount(value: string) {
-    setCustomAmount(value);
+    const normalized = normalizeAmountInput(value);
+    setCustomAmount(normalized);
     setError(false);
-    if (!value) setMessage("Nhập tối thiểu 2.000đ.");
+    if (!normalized) setMessage("Nhập tối thiểu 2.000đ.");
   }
 
   const qrUrl = `${qrBase}?amount=${amount}&addInfo=${encodeURIComponent("cam on da nuoi Tanh")}`;
@@ -87,7 +91,10 @@ export default function App() {
             <p className="section-label">Phương án miễn phí</p>
             <h2>Nhấp một cái.<br />Bụng ghi nhận.</h2>
             <p>Mở một sản phẩm ngẫu nhiên ở tab mới. Bạn xem qua là đã hỗ trợ Tanh, không cần mua và không cần làm lễ bàn giao.</p>
-            <button className="action" type="button" onClick={feedForFree}>Nuôi Tanh miễn phí ↗</button>
+            <div className="action-row">
+              <button className="action" type="button" onClick={feedForFree}>Mở ngẫu nhiên ↗</button>
+              <a className="action action-secondary" href="/free-feed">Tự chọn sản phẩm ↗</a>
+            </div>
             <p className="status" aria-live="polite">{status}</p>
           </div>
         </section>
@@ -122,7 +129,7 @@ export default function App() {
                 aria-label="Số tiền tùy chọn"
                 aria-describedby="amount-message"
                 aria-invalid={error || undefined}
-                value={customAmount}
+                value={formatAmountInput(customAmount)}
                 onChange={(event) => changeCustomAmount(event.target.value)}
               />
             </div>
