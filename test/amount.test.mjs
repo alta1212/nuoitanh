@@ -8,6 +8,7 @@ import {
 
 test("formats Vietnamese currency input", () => {
   assert.equal(formatAmountInput("321312213"), "321.312.213");
+  assert.equal(formatAmountInput("321312213", ","), "321,312,213");
   assert.equal(formatAmountInput("2.000"), "2.000");
   assert.equal(normalizeAmountInput("12a.345đ"), "12345");
   assert.equal(formatAmountInput(""), "");

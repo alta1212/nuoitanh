@@ -2,8 +2,11 @@ export function normalizeAmountInput(value: string) {
   return value.replace(/\D/g, "").replace(/^0+(?=\d)/, "");
 }
 
-export function formatAmountInput(value: string) {
-  return normalizeAmountInput(value).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+export function formatAmountInput(value: string, separator = ".") {
+  return normalizeAmountInput(value).replace(
+    /\B(?=(\d{3})+(?!\d))/g,
+    separator,
+  );
 }
 
 export function parseAmount(value: string) {

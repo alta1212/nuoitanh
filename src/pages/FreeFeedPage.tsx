@@ -1,26 +1,36 @@
-import { useEffect } from "react";
+import LanguageSwitcher from "../components/LanguageSwitcher";
 import { products } from "../data/products";
+import { messages } from "../i18n";
+import type { Locale } from "../utils/locale";
 
-export default function FreeFeedPage() {
-  useEffect(() => {
-    document.title = "Tự chọn sản phẩm | Nuôi Tanh miễn phí";
-  }, []);
+interface FreeFeedPageProps {
+  locale: Locale;
+  onLocaleChange: (locale: Locale) => void;
+}
+
+export default function FreeFeedPage({
+  locale,
+  onLocaleChange,
+}: FreeFeedPageProps) {
+  const t = messages[locale].feed;
+  const common = messages[locale].common;
 
   return (
     <div className="page free-feed-page">
       <header className="masthead">
-        <a className="brand" href="/">Trung tâm cứu đói cho Tanh</a>
-        <a className="back-link" href="/">← Về trang chính</a>
+        <a className="brand" href="/">{common.brand}</a>
+        <div className="masthead-tools">
+          <a className="back-link" href="/">{t.back}</a>
+          <LanguageSwitcher locale={locale} onChange={onLocaleChange} />
+        </div>
       </header>
       <main className="feed-main">
         <section className="feed-intro" aria-labelledby="feed-title">
-          <p className="kicker">Phương án miễn phí · tự chọn</p>
-          <h1 id="feed-title">Chọn món.<br />Nuôi Tanh.</h1>
-          <p className="lead">
-            Mở một sản phẩm bạn thấy thú vị. Chỉ cần xem qua, không cần mua.
-          </p>
+          <p className="kicker">{t.kicker}</p>
+          <h1 id="feed-title">{t.titleLine1}<br />{t.titleLine2}</h1>
+          <p className="lead">{t.lead}</p>
         </section>
-        <section className="product-grid" aria-label="Danh sách sản phẩm">
+        <section className="product-grid" aria-label={t.productListLabel}>
           {products.map((product) => (
             <a
               className="product-card"
@@ -32,10 +42,10 @@ export default function FreeFeedPage() {
               {product.image ? (
                 <img src={product.image} alt="" loading="lazy" />
               ) : (
-                <span className="product-image-fallback" aria-hidden="true">0Đ</span>
+                <span className="product-image-fallback" aria-hidden="true">{common.freeBadge}</span>
               )}
               <span className="product-copy">
-                <span className="product-label">Sản phẩm tiếp tế ↗</span>
+                <span className="product-label">{t.productLabel}</span>
                 <h2>{product.title}</h2>
                 <span className="product-description">{product.description}</span>
               </span>

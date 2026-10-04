@@ -92,6 +92,42 @@ input:focus-visible {
   text-transform: uppercase;
 }
 
+.masthead-tools {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
+
+.language-switcher {
+  flex: 0 0 auto;
+  display: flex;
+  border: 1px solid var(--ink);
+}
+
+.language-switcher button {
+  min-width: 38px;
+  min-height: 32px;
+  padding: 0 8px;
+  border: 0;
+  border-right: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  font-family: "Courier New", monospace;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.language-switcher button:last-child {
+  border-right: 0;
+}
+
+.language-switcher button[aria-pressed="true"] {
+  color: var(--button-text);
+  background: var(--ink);
+}
+
 main {
   min-width: 0;
   display: grid;
@@ -147,7 +183,7 @@ h1 {
 }
 
 .free-box::after {
-  content: "0Đ";
+  content: attr(data-free-label);
   position: absolute;
   top: -24px;
   right: 22px;
@@ -528,6 +564,19 @@ h2 {
 @media (max-width: 430px) {
   .record {
     display: none;
+  }
+
+  .masthead-tools {
+    gap: 10px;
+  }
+
+  .free-feed-page .masthead {
+    align-items: flex-start;
+  }
+
+  .free-feed-page .masthead-tools {
+    flex-direction: column-reverse;
+    align-items: flex-end;
   }
 
   .qr-heading {

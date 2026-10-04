@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "homeTitle": "Feed Tanh | Free or scan a QR code",
+    "feedTitle": "Choose a product | Feed Tanh for free",
+    "description": "Two ways to feed Tanh: browse for free or scan a QR code."
+  },
+  "common": {
+    "brand": "Tanh Hunger Relief Center",
+    "languageLabel": "Choose language",
+    "vietnamese": "Vietnamese",
+    "english": "English",
+    "freeBadge": "₫0"
+  },
+  "home": {
+    "recordLine1": "Supply record",
+    "recordLine2": "For internal stomach circulation",
+    "statusReady": "Status: ready to receive your kindness.",
+    "statusOpened": "Mission opened. Tanh gratefully acknowledges your service.",
+    "kicker": "A completely serious announcement",
+    "titleLine1": "Two ways",
+    "titleLine2": "to feed Tanh.",
+    "lead": "One costs nothing. The other keeps your banking app a little busy.",
+    "freeLabel": "The free option",
+    "freeTitleLine1": "One click.",
+    "freeTitleLine2": "Stomach notified.",
+    "freeDescription": "Open a random product in a new tab. Taking a look already supports Tanh—no purchase or formal handover required.",
+    "openRandom": "Open random ↗",
+    "chooseProduct": "Choose a product ↗",
+    "qrLabel": "The QR option",
+    "qrTitle": "Make a hunger-relief transfer.",
+    "stampLabel": "Verified: stomach is real",
+    "stampLine1": "Verified",
+    "stampLine2": "stomach is real",
+    "amountLegend": "Choose a feeding budget",
+    "amountPlaceholder": "Or enter your preferred amount",
+    "customAmountLabel": "Custom amount",
+    "amountCurrent": "Current QR: {amount}",
+    "amountMinimum": "Enter at least ₫2,000.",
+    "amountTooSmall": "The bank will not transfer less than ₫2,000—try a little more.",
+    "amountTooLarge": "That amount is too large. Please enter a smaller one.",
+    "openQrLabel": "Open the full-size bank transfer QR code",
+    "qrAlt": "QR code for a bank transfer to feed Tanh",
+    "bankInfoLabel": "Bank account information",
+    "bank": "Bank",
+    "accountNumber": "Account number",
+    "recipient": "Recipient",
+    "disclaimer": "This is not a charity fund. It is a voluntary invitation to buy Tanh a meal. No invitation is fine too; your file still gets a friendly stamp."
+  },
+  "feed": {
+    "back": "← Back to home",
+    "kicker": "The free option · your choice",
+    "titleLine1": "Pick a product.",
+    "titleLine2": "Feed Tanh.",
+    "lead": "Open any product that looks interesting. Just take a look—no purchase required.",
+    "productListLabel": "Product list",
+    "productLabel": "Supply product ↗"
+  }
+}

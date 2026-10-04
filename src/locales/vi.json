@@ -1,0 +1,58 @@
+{
+  "meta": {
+    "homeTitle": "Nuôi Tanh | Miễn phí hoặc quét QR",
+    "feedTitle": "Tự chọn sản phẩm | Nuôi Tanh miễn phí",
+    "description": "Hai phương án tiếp tế cho Tanh: nuôi miễn phí hoặc quét mã QR."
+  },
+  "common": {
+    "brand": "Trung tâm cứu đói cho Tanh",
+    "languageLabel": "Chọn ngôn ngữ",
+    "vietnamese": "Tiếng Việt",
+    "english": "Tiếng Anh",
+    "freeBadge": "0Đ"
+  },
+  "home": {
+    "recordLine1": "Biên bản tiếp tế",
+    "recordLine2": "Lưu hành nội bộ trong bụng",
+    "statusReady": "Trạng thái: sẵn sàng tiếp nhận lòng tốt.",
+    "statusOpened": "Đã mở nhiệm vụ. Tanh xin ghi nhận công lao.",
+    "kicker": "Thông báo hoàn toàn nghiêm túc",
+    "titleLine1": "Hai cách",
+    "titleLine2": "nuôi Tanh.",
+    "lead": "Một cách không tốn tiền. Một cách khiến ứng dụng ngân hàng hơi bận.",
+    "freeLabel": "Phương án miễn phí",
+    "freeTitleLine1": "Nhấp một cái.",
+    "freeTitleLine2": "Bụng ghi nhận.",
+    "freeDescription": "Mở một sản phẩm ngẫu nhiên ở tab mới. Bạn xem qua là đã hỗ trợ Tanh, không cần mua và không cần làm lễ bàn giao.",
+    "openRandom": "Mở ngẫu nhiên ↗",
+    "chooseProduct": "Tự chọn sản phẩm ↗",
+    "qrLabel": "Phương án quét mã",
+    "qrTitle": "Chuyển khoản cứu đói.",
+    "stampLabel": "Đã xác nhận bụng có thật",
+    "stampLine1": "Đã xác nhận",
+    "stampLine2": "bụng có thật",
+    "amountLegend": "Chọn ngân sách cứu đói",
+    "amountPlaceholder": "Hoặc nhập số tiền bạn muốn",
+    "customAmountLabel": "Số tiền tùy chọn",
+    "amountCurrent": "QR hiện tại: {amount}",
+    "amountMinimum": "Nhập tối thiểu 2.000đ.",
+    "amountTooSmall": "Bank không cho chuyển dưới 2k =)) nhiều hơn đi",
+    "amountTooLarge": "Số tiền này lớn quá, nhập ít hơn nhé.",
+    "openQrLabel": "Mở mã QR chuyển khoản kích thước đầy đủ",
+    "qrAlt": "Mã QR chuyển khoản nuôi Tanh",
+    "bankInfoLabel": "Thông tin tài khoản",
+    "bank": "Ngân hàng",
+    "accountNumber": "Số tài khoản",
+    "recipient": "Người nhận",
+    "disclaimer": "Đây không phải quỹ từ thiện. Đây là một lời mời cơm tự nguyện cho Tanh. Không mời cũng không sao, hồ sơ vẫn được đóng dấu thân thiện."
+  },
+  "feed": {
+    "back": "← Về trang chính",
+    "kicker": "Phương án miễn phí · tự chọn",
+    "titleLine1": "Chọn món.",
+    "titleLine2": "Nuôi Tanh.",
+    "lead": "Mở một sản phẩm bạn thấy thú vị. Chỉ cần xem qua, không cần mua.",
+    "productListLabel": "Danh sách sản phẩm",
+    "productLabel": "Sản phẩm tiếp tế ↗"
+  }
+}
