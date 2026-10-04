@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { products } from "./products";
+import { products } from "../data/products";
 
 export default function FreeFeedPage() {
   useEffect(() => {

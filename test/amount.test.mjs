@@ -4,7 +4,7 @@ import {
   formatAmountInput,
   normalizeAmountInput,
   parseAmount,
-} from "../src/amount.ts";
+} from "../src/utils/amount.ts";
 
 test("formats Vietnamese currency input", () => {
   assert.equal(formatAmountInput("321312213"), "321.312.213");

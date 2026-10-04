@@ -1,18 +1,18 @@
-import { readFile, rename, writeFile } from "node:fs/promises";
+import { rename, writeFile } from "node:fs/promises";
 import { lookup } from "node:dns/promises";
 import { getLinkPreview } from "link-preview-js";
+import { productLinks } from "../src/data/product-links.ts";
 
-const file = new URL("../src/products.json", import.meta.url);
-const temporaryFile = new URL("../src/products.json.tmp", import.meta.url);
-const products = JSON.parse(await readFile(file, "utf8"));
+const file = new URL("../src/data/products.json", import.meta.url);
+const temporaryFile = new URL("../src/data/products.json.tmp", import.meta.url);
 
 const refreshed = [];
-for (const product of products) {
-  if (new URL(product.url).hostname !== "s.shopee.vn") {
-    throw new Error(`Link không thuộc s.shopee.vn: ${product.url}`);
+for (const url of productLinks) {
+  if (new URL(url).hostname !== "s.shopee.vn") {
+    throw new Error(`Link không thuộc s.shopee.vn: ${url}`);
   }
 
-  const metadata = await getLinkPreview(product.url, {
+  const metadata = await getLinkPreview(url, {
     followRedirects: "manual",
     handleRedirects: (_from, to) => {
       const hostname = new URL(to).hostname;
@@ -34,10 +34,10 @@ for (const product of products) {
   const image = "images" in metadata ? metadata.images[0] : "";
 
   if (!title || !description || !image) {
-    throw new Error(`Thiếu metadata cho ${product.url}`);
+    throw new Error(`Thiếu metadata cho ${url}`);
   }
 
-  refreshed.push({ url: product.url, title, description, image });
+  refreshed.push({ url, title, description, image });
   console.log(`✓ ${title}`);
 }
 
