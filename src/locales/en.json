@@ -1,92 +1,210 @@
 {
   "meta": {
-    "homeTitle": "Feed Tanh | You order. Tanh eats.",
-    "feedTitle": "Feed for free | Tanh's rice shop",
-    "description": "A rice shop with just one diner. Treat Tanh to a meal or browse products for free."
+    "homeTitle": "The Emergency Relief Fund For Myself | Nuôi Tanh",
+    "feedTitle": "The ₫0 way to help | Nuôi Tanh",
+    "description": "A public, transparent and shameless begging page. Scan the QR to feed Tanh a meal, or help for ₫0."
   },
   "common": {
-    "brand": "Nuôi Tanh",
-    "brandCaption": "A rice shop with just one diner",
-    "homeLabel": "Nuôi Tanh, back to home",
-    "navigationLabel": "Main navigation",
+    "brandLine1": "The Emergency Relief Fund",
+    "brandLine2": "For Myself",
+    "brandCaption": "Founded: when the money ran out",
+    "homeLabel": "The Emergency Relief Fund For Myself, back to home",
+    "navigationLabel": "Page tools",
     "skipLink": "Skip to main content",
-    "freeNav": "Feed for free",
     "languageLabel": "Choose language",
     "vietnamese": "Vietnamese",
     "english": "English",
-    "footerNote": "Your treat. Tanh's thanks."
+    "marquee": "🚨 EMERGENCY: VICTIM IS HUNGRY · CONDITION: CRITICAL (STOMACH GROWLING) · ALL DONATIONS ACCEPTED, LARGE ONES ESPECIALLY · ",
+    "musicTitle": "Documentary background music",
+    "musicOn": "Sad music",
+    "musicOff": "Stop music",
+    "musicToast": "🎻 Documentary music playing… you may now cry",
+    "musicError": "Your browser can't play the music 😢",
+    "darkTitle": "Dark mode",
+    "nightLabel": "Night",
+    "dayLabel": "Day",
+    "nightToast": "🌙 Hungry again tonight…",
+    "footerRights": "The Emergency Relief Fund For Myself. All rights reserved, except the right to eat well.",
+    "footerAddress": "Headquarters: in front of the fridge · Hotline: stomach growls"
+  },
+  "exit": {
+    "title": "You're really leaving?",
+    "text": "I just heard my stomach growl. It's calling your name.",
+    "stay": "Fine, I'll stay and feed you",
+    "free": "Feed for ₫0 only",
+    "leave": "Leave anyway (heartless 💔)",
+    "leaveToast": "Go on… I'll be fine (I won't) 💔"
   },
   "home": {
-    "kicker": "Home cooking. Home-grown diner.",
-    "titleLine1": "You order.",
-    "titleLine2": "Tanh eats.",
-    "lead": "Tuấn Anh runs this page and receives your gift. You're treating the owner to a meal.",
-    "inviteMeal": "Treat Tanh to a meal",
-    "openRandom": "Feed for free",
-    "chooseProduct": "Or choose a product yourself.",
-    "freeDescription": "Feed for free opens a random product in a new tab.",
-    "statusReady": "Happy to see you, with or without a treat.",
-    "statusOpened": "Product opened. Thanks for taking a look!",
-    "statusError": "Could not open a product. Try again or visit the product shelf.",
-    "mealAlt": "An illustrated bowl of rice with a fried egg and chopsticks for Tanh's rice shop",
-    "mealCaption": "One meal, one happy stomach.",
-    "menuLabel": "The treat menu",
-    "menuTitle": "What's on your tab?",
-    "menuDescription": "Pick a suggested gift amount. Tanh takes care of the eating.",
-    "menuSnack": "A little snack",
-    "menuSnackDescription": "Keep the stomach from protesting.",
-    "menuMeal": "A meal for Tanh",
-    "menuMealDescription": "It's time to eat. Treat the diner.",
-    "menuFull": "A little extra",
-    "menuFullDescription": "Fuel for thinking up the next meme.",
-    "customMeal": "Your own gift amount",
-    "amountLegend": "Choose a meal gift amount",
-    "amountPlaceholder": "Enter your gift amount",
-    "customAmountLabel": "Or choose your own amount",
-    "amountCurrent": "Current meal invitation: {amount}",
-    "amountTooSmall": "Enter at least ₫2,000 to prepare a meal QR code.",
-    "amountTooLarge": "That amount is too large. Please enter a smaller one.",
-    "freeLabel": "The free option",
-    "freeTitle": "Browse. Give your wallet a break.",
-    "freeMenuAction": "Visit the free product shelf",
-    "affiliateNote": "Products use affiliate links. Any commission depends on the platform's conditions.",
-    "receiptCaption": "Today's diner: the owner",
-    "qrTitle": "A meal on you",
-    "mealLabel": "Your treat",
-    "guestLabel": "Diner",
-    "totalLabel": "Gift amount",
-    "invalidAmount": "Please re-enter",
-    "qrInvalid": "Enter a valid amount in the menu to show the QR code. Bank details are still available below.",
+    "kicker": "Emergency appeal #001",
+    "dayTitleBefore": "Please save ",
+    "dayTitleEm": "a hungry",
+    "dayTitleAfter": " soul.",
+    "nightTitleBefore": "Tonight, ",
+    "nightTitleEm": "I'm hungry again.",
+    "growl": "🌙 grrr… grrr grrr… (stomach, 2 a.m.)",
+    "ledeBefore": "Every day, ",
+    "ledeBold": "one person",
+    "ledeAfter": " stands before an empty fridge and asks, “what did I do wrong?” That person is me. Your contribution will change my life for about 1–2 meals.",
+    "stats": [
+      { "value": "3 days", "label": "without bubble tea" },
+      { "value": "97%", "label": "of meals are instant noodles" },
+      { "value": "₫0", "label": "current balance (approximately)" }
+    ],
+    "ctaDonate": "💝 Help now",
+    "ctaFree": "🙏 Help for ₫0",
+    "noTexts": [
+      "No thanks",
+      "Catch me if you can 😝",
+      "Missed!",
+      "Come on…",
+      "Think again 🥺",
+      "This button is broken",
+      "You can't run from this"
+    ],
+    "noModalTitle": "System error",
+    "noModalText": "The “No thanks” option does not exist in this universe. Please choose again.",
+    "noModalOk": "Yes, I'll help",
+    "noteLine1": "Please help me 🥺",
+    "noteLine2": "(100% real photo)",
+    "victimAlt": "The victim",
+    "photoBar": "HIDDEN TO SAVE FACE",
+    "captionVictim": "Victim:",
+    "captionAfter": "— photographed while checking the account balance.",
+    "stampLine1": "Verified",
+    "stampLine2": "broke",
+    "raisedLabel": "Raised so far",
+    "goalLabel": "Goal:",
+    "percentReached": "{percent}% reached",
+    "timeLeft": "⏳ Time left: until it's enough",
+    "storyTitle": "The victim's circumstances",
+    "storySub": "Numbers that make every reader… scroll past.",
+    "story": [
+      { "title": "An empty wallet", "text": "All that remains is one old bubble tea receipt and a lot of memories." },
+      { "title": "Payday, the thief", "text": "The salary arrives and vanishes, leaving the victim with 26 more days in the month." },
+      { "title": "A simple dream", "text": "To eat a meal with meat without checking the price before ordering." }
+    ],
+    "donateTitle": "Choose your level of kindness",
+    "donateSub": "Every level is acknowledged with infinite gratitude (and no refunds).",
+    "tiers": {
+      "passerby": {
+        "name": "Passer-by",
+        "desc": "Saw it, felt a little sorry, moved on.",
+        "toast": "Thank you, stranger! You just saved me from skipping a meal 🍜"
+      },
+      "goodPerson": {
+        "name": "Good person",
+        "desc": "Enough for a fully loaded bubble tea.",
+        "toast": "Good person, today's bubble tea is all thanks to you 🧋"
+      },
+      "bodhisattva": {
+        "name": "Living Bodhisattva",
+        "desc": "Merit +9999, rich in the next life.",
+        "toast": "A Bodhisattva appears! Your merit just went up by 9999 🙏"
+      },
+      "adoptiveParent": {
+        "name": "Adoptive parent",
+        "desc": "Officially adopt me as your child.",
+        "toast": "Hello, mum/dad 🙇 I promise to behave!"
+      }
+    },
+    "customPlaceholder": "Or enter any amount you like…",
+    "customAny": "Any amount",
+    "customRare": "A rare good person",
+    "customTycoon": "Anonymous tycoon",
+    "customToast": "Lovely number! Time to scan the QR ✨",
+    "amountTooSmall": "Enter at least ₫2,000 to get a QR code.",
+    "freeCtaBold": "Out of money?",
+    "freeCtaText": "No problem, you can still feed me without spending a thing.",
+    "freeCtaAction": "Help for ₫0 →",
     "openQrLabel": "Open the full-size bank transfer QR code in a new tab",
-    "qrAlt": "Bank transfer QR code to treat Tanh to a meal",
-    "qrCaption": "Scan with your banking app to send a meal gift.",
-    "qrLoading": "Preparing your meal QR code…",
+    "qrAlt": "Bank transfer QR code to feed Tanh",
+    "qrCaption": "Scan with any banking app · amount already filled in",
+    "qrLoading": "Preparing your QR code…",
     "qrError": "Could not load the QR code. Try again or use the bank details below.",
     "qrRetry": "Reload QR code",
-    "bankInfoLabel": "Bank account information",
     "bank": "Bank",
     "accountNumber": "Account number",
-    "recipient": "Recipient",
-    "copyAccount": "Copy account number",
-    "copiedAccount": "Account number copied",
-    "copyError": "Could not copy. Select and copy 1212141000 from the bank details above.",
-    "receiptThanks": "A meal is lovely. Your company, too.",
-    "disclaimer": "This is a meme site, not a charity fund. Meal gifts are voluntary personal contributions to Nguyễn Tuấn Anh."
+    "recipient": "Account holder",
+    "memoLabel": "Message",
+    "copy": "Copy",
+    "copied": "Copied: {value}",
+    "copyError": "Could not copy, please select it by hand",
+    "donorsTitle": "🏆 Hall of benefactors",
+    "donorsSub": "The great people who helped me live a few meals longer. Your names shall be engraved (on this website).",
+    "donors": [
+      { "name": "Elon Mú", "amount": "1 used rocket", "note": "“Also bought your banking app. Your balance is now a meme.”" },
+      { "name": "Mr Beat", "amount": "$1 million*", "note": "*Payable only after surviving 100 days inside the fridge" },
+      { "name": "Stewie Griffin", "amount": "1 death ray", "note": "“Eat, mortal. You'll need your strength to serve me.”" },
+      { "name": "Thanos", "amount": "½ a bowl of rice", "note": "“Perfectly balanced, as all meals should be”" },
+      { "name": "Doraemon", "amount": "1 dorayaki", "note": "From the magic pocket. Best before the 22nd century." }
+    ],
+    "faqTitle": "Frequently asked questions",
+    "faqSub": "And answers so honest they hurt.",
+    "faq": [
+      {
+        "question": "What will the money be used for?",
+        "answer": "100% goes to a humanitarian cause: feeding me. Financial reports are published as photos of food."
+      },
+      {
+        "question": "Is this fund licensed?",
+        "answer": "No. But there is a driving licence, if that makes you feel better."
+      },
+      {
+        "question": "Can I get a refund?",
+        "answer": "You will be refunded with a heartfelt thank you, possibly with a sticker."
+      },
+      {
+        "question": "Is this a scam?",
+        "answer": "No, this is a public, transparent and shameless begging page. You know exactly who you're feeding."
+      }
+    ]
   },
-  "feed": {
-    "back": "Back to the rice shop",
-    "kicker": "Feed for free · pick a product",
-    "titleLine1": "Feed Tanh.",
-    "titleLine2": "Keep your cash.",
-    "lead": "See something interesting? Open it and take a look. Browsing a product costs you nothing.",
-    "affiliateNote": "These are affiliate links. Tanh may receive a commission when the platform's conditions are met; opening a link does not guarantee a commission.",
-    "productListLabel": "What's on the shelf?",
-    "newTabNote": "Products open in a new tab",
-    "productLabel": "On the shelf",
+  "free": {
+    "back": "← Back to the begging page",
+    "kicker": "The “Help for ₫0” programme",
+    "titleBefore": "The list of ",
+    "titleEm": "₫0 good deeds",
+    "lede": "No money? Me neither. We understand each other. Complete the tasks below to feed me without losing a single đồng.",
+    "meritCounter": "🪷 Your merit:",
+    "meritLabel": "🪷 +{merit} merit",
+    "meritToast": "Merit +{merit}! You'll be rich in the next life 🪷",
+    "tasks": {
+      "shopee": {
+        "title": "Buy what you already planned to buy on Shopee",
+        "desc": "You're buying it anyway. Buy through this link and I get to eat.",
+        "cta": "Go to Shopee"
+      },
+      "tiktok": {
+        "title": "Hunt for TikTok Shop deals",
+        "desc": "Check out while scrolling and I get a few thousand đồng.",
+        "cta": "Open TikTok Shop"
+      },
+      "lazada": {
+        "title": "Take a stroll around Lazada",
+        "desc": "No need to buy, just stop by and give me hope.",
+        "cta": "Go to Lazada"
+      },
+      "signup": {
+        "title": "Install the app and sign up",
+        "desc": "2 minutes of your time, 1 meal of mine saved.",
+        "cta": "Sign up"
+      },
+      "share": {
+        "title": "Share this page with one rich person",
+        "desc": "You have no money, but you have friends who do.",
+        "cta": "Copy link"
+      }
+    },
+    "shareCopied": "Link copied! Send it to the richest person you know",
+    "shareError": "Please copy the link from the address bar and send it on",
+    "productsTitle": "What's on the shelf?",
+    "productsSub": "See something interesting? Take a look. Products open in a new tab.",
     "viewProduct": "View on Shopee",
-    "imageLoading": "Loading image…",
-    "imageUnavailable": "Image unavailable",
-    "emptyProducts": "The shelf is empty. Check back later or return to the rice shop.",
-    "footerNote": "Browse whatever catches your eye. Return to the shop if you'd like to treat Tanh."
+    "emptyProducts": "The shelf is empty. Please check back later.",
+    "disclaimerBold": "Transparency:",
+    "disclaimerText": "The buttons above are affiliate links. You pay the usual price, nothing extra. The platform pays me a few thousand đồng in commission, enough for one more pack of noodles.",
+    "backToQrQuestion": "Changed your mind and want to feed me with real money?",
+    "backToQr": "💝 Back to the QR code"
   }
 }

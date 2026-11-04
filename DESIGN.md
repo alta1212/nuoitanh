@@ -1,18 +1,19 @@
-# Nuôi Tanh: quán cơm chỉ có một khách
+# Nuôi Tanh: Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi
 
-Direction chosen by the owner: concept 2, a Vietnamese neighborhood rice shop.
-Keep the free-feed page and the free feeding action.
+Direction chosen by the owner: a parody emergency-appeal page in which the victim, the fundraiser, and the recipient are the same person.
+Keep the free-feed page at `/free-feed`.
 
-- Audience: Vietnamese visitors who enjoy a dry, personal internet joke.
-- Voice: ordinary Vietnamese, short and matter-of-fact. The recipient is Tanh; contributions are voluntary personal gifts, not charity donations.
-- Palette: warm paper `#f6f2e7`, dark green `#24483b`, near-black `#252c26`. Red `#ac392c` marks the main invitation action. Existing food illustrations retain their food colors.
-- Typography: Georgia for the large shop headline and menu headings, chosen for the familiar printed-menu character; Arial for readable Vietnamese descriptions, controls, and bank details.
-- Composition: a shop sign and illustrated introduction, then menu rows beside a meal invitation slip. The free option remains prominent immediately below the headline.
-- Motif: menu numbering, dotted menu leaders, and a torn receipt edge. These describe ordering and payment, rather than adding unrelated decoration.
-- Free-feed page: a product catalog using actual product metadata. Equal catalog items use the same layout because visitors compare them and choose one.
-- Spacing: generous around the headline, tighter within menu rows and bank information, with separate sections divided by practical rules.
-- Surfaces: paper with small corners; no glass, glow, background grid, or floating cards. One restrained receipt shadow separates the slip from the counter.
-- Theme: light only, matching physical shop signage, menus, and receipts.
-- Dials: ENERGY 2 / RHYTHM 2 / MOTION 1. Motion only acknowledges hover and press; respect reduced motion.
-- Responsive: one column on phones, two catalog columns on medium screens, three on wide screens. Menu and receipt share a row only when both fit comfortably.
-- Evidence: no invented donations, transaction feed, reviews, or automatic payment confirmation. Product links are disclosed as affiliate links; commission depends on platform conditions.
+- Audience: Vietnamese visitors who enjoy a dry, personal internet joke. English is available through the VI/EN switcher.
+- Voice: the solemn language of a charity appeal applied to trivial hardship such as an empty fridge or no bubble tea. Shameless, and open about who receives the money.
+- Palette: paper `#f6f1e7`, ink `#1b1714`, muted `#6b6258`, alarm red `#c8102e`, gold `#c99a2e`, cards `#fffdf8`. Night mode swaps in navy paper `#0f1220` with coral `#ff4d6d` and gold `#f0c35a`.
+- Typography: Playfair Display for headlines, chosen for its newspaper-appeal character; Be Vietnam Pro for body text and controls; Patrick Hand for the sticky note and stomach growl.
+- Composition: alert ticker, fund masthead, then a hero beside the victim's photo, a progress bar, the victim's circumstances, donation tiers beside the QR code, a donor board, and an FAQ.
+- Motif: a censored photo, "verified poor" stamp, sticky note, and an absurd 1 billion đồng goal. These borrow from charity campaigns and tabloid reporting.
+- Free-feed page: a checklist of ₫0 good deeds with a merit counter, followed by the Shopee catalog using actual product metadata.
+- Surfaces: bordered cards with one hard offset shadow on the donation panel and modals. Night mode adds stars and a soft gradient.
+- Theme: light by day and dark automatically from 22:00 to 05:00, until the visitor chooses one.
+- Dials: ENERGY 8 / RHYTHM 5 / MOTION 7. Coin rain, the ticker, and the runaway "no" button are part of the joke; respect reduced motion.
+- Interaction jokes: the "no" button runs away, an exit-intent popup appears once per session, and sad documentary music plays only after the visitor turns it on.
+- Responsive: hero and donation panels stack below 860px; tiers stay in two columns until 340px; layouts must not overflow at 320px.
+- Payment: the QR image comes from `img.vietqr.io`, with bank details always shown beneath it. Custom amounts start at 2.000đ.
+- Evidence: the raised amount, stats, and donor board are hard-coded jokes in `src/data/fund.ts` and `src/locales/`, not real transaction data, and there is no automatic payment confirmation. Product links are disclosed as affiliate links.

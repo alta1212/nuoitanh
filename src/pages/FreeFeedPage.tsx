@@ -1,134 +1,133 @@
-import { useState } from "react";
-import LanguageSwitcher from "../components/LanguageSwitcher";
+import { useState, type MouseEvent } from "react";
+import { useFx } from "../components/FxProvider";
+import TaskCard from "../components/TaskCard";
+import { productMerit, tasks } from "../data/fund";
 import { products, type Product } from "../data/products";
 import { messages } from "../i18n";
 import type { Locale } from "../utils/locale";
 
-interface FreeFeedPageProps {
-  locale: Locale;
-  onLocaleChange: (locale: Locale) => void;
-}
-
-function ProductImage({
-  product,
-  fallback,
-  loading,
-}: {
-  product: Product;
-  fallback: string;
-  loading: string;
-}) {
-  const [state, setState] = useState<"loading" | "loaded" | "error">(
-    product.image ? "loading" : "error",
-  );
-  return (
-    <span className="product-image" data-state={state}>
-      {state !== "error" && (
-        <img
-          src={product.image}
-          alt=""
-          loading="lazy"
-          onLoad={() => setState("loaded")}
-          onError={() => setState("error")}
-        />
-      )}
-      {state === "loading" && <span className="image-loading">{loading}</span>}
-      {state === "error" && (
-        <span className="product-image-fallback">{fallback}</span>
-      )}
-    </span>
+function ProductThumb({ product }: { product: Product }) {
+  const [failed, setFailed] = useState(!product.image);
+  return failed ? (
+    <>🛍️</>
+  ) : (
+    <img src={product.image} alt="" loading="lazy" onError={() => setFailed(true)} />
   );
 }
 
-export default function FreeFeedPage({
-  locale,
-  onLocaleChange,
-}: FreeFeedPageProps) {
-  const t = messages[locale].feed;
-  const common = messages[locale].common;
+export default function FreeFeedPage({ locale }: { locale: Locale }) {
+  const t = messages[locale].free;
+  const { toast, burst } = useFx();
+  const [done, setDone] = useState<ReadonlySet<string>>(new Set());
+  const [merit, setMerit] = useState(0);
+  const [randomProduct] = useState(
+    () => products[Math.floor(Math.random() * products.length)]?.url,
+  );
+
+  const visibleTasks = tasks.filter(
+    (task) => task.url && (task.url !== "random-product" || randomProduct),
+  );
+
+  function complete(key: string, points: number, event: MouseEvent, silent = false) {
+    if (done.has(key)) return;
+    setDone(new Set(done).add(key));
+    setMerit(merit + points);
+    burst(20, event);
+    if (!silent) toast(t.meritToast.replace("{merit}", String(points)));
+  }
+
+  async function share() {
+    try {
+      await navigator.clipboard.writeText(`${window.location.origin}/`);
+      toast(t.shareCopied);
+    } catch {
+      toast(t.shareError);
+    }
+  }
+
+  const meritLabel = (points: number) => t.meritLabel.replace("{merit}", String(points));
 
   return (
-    <div className="page free-feed-page">
-      <a className="skip-link" href="#main-content">
-        {common.skipLink}
-      </a>
-      <header className="masthead">
-        <a className="brand" href="/" aria-label={common.homeLabel}>
-          <span className="brand-name">{common.brand}</span>
-          <span className="brand-caption">{common.brandCaption}</span>
+    <div className="wrap">
+      <div className="free-hero">
+        <a href="/" className="link-btn" style={{ fontSize: 14 }}>
+          {t.back}
         </a>
-        <nav className="masthead-tools" aria-label={common.navigationLabel}>
-          <a className="nav-link" href="/">
-            {t.back}
-          </a>
-          <LanguageSwitcher locale={locale} onChange={onLocaleChange} />
-        </nav>
-      </header>
-      <main id="main-content" className="feed-main" tabIndex={-1}>
-        <section className="feed-intro" aria-labelledby="feed-title">
-          <div>
-            <p className="shop-note">{t.kicker}</p>
-            <h1 id="feed-title">
-              {t.titleLine1}
-              <br />
-              <span>{t.titleLine2}</span>
-            </h1>
-          </div>
-          <div className="feed-intro-copy">
-            <p className="lead">{t.lead}</p>
-            <p className="affiliate-note">{t.affiliateNote}</p>
-          </div>
-        </section>
-        <section
-          className="product-section"
-          aria-labelledby="product-list-title"
-        >
-          <div className="catalog-heading">
-            <h2 id="product-list-title">{t.productListLabel}</h2>
-            <span>{t.newTabNote}</span>
-          </div>
-          {products.length ? (
-            <div className="product-grid">
-              {products.map((product, index) => (
-                <a
-                  className="product-card"
-                  href={product.url}
-                  target="_blank"
-                  rel="sponsored noopener noreferrer"
-                  key={product.url}
-                >
-                  <ProductImage
-                    product={product}
-                    fallback={t.imageUnavailable}
-                    loading={t.imageLoading}
-                  />
-                  <span className="product-copy">
-                    <span className="product-label">
-                      {String(index + 1).padStart(2, "0")} / {t.productLabel}
-                    </span>
-                    <h3>{product.title}</h3>
-                    <span className="product-description">
-                      {product.description}
-                    </span>
-                    <span className="product-action">
-                      {t.viewProduct}
-                      <span aria-hidden="true">↗</span>
-                    </span>
-                  </span>
-                </a>
-              ))}
-            </div>
-          ) : (
-            <p className="catalog-empty">
-              {t.emptyProducts} <a href="/">{t.back}</a>
-            </p>
-          )}
-        </section>
-      </main>
-      <footer className="shop-footer">
-        <p>{t.footerNote}</p>
-        <span>{common.footerNote}</span>
-      </footer>
+        <div className="kicker" style={{ marginTop: 18 }}>
+          <i />
+          {t.kicker}
+        </div>
+        <h1>
+          {t.titleBefore}
+          <em>{t.titleEm}</em>
+        </h1>
+        <p className="lede">{t.lede}</p>
+        <div className="merit">
+          {t.meritCounter} <b>{merit.toLocaleString(locale === "vi" ? "vi-VN" : "en-US")}</b>
+        </div>
+      </div>
+
+      <div className="tasks">
+        {visibleTasks.map((task) => {
+          const copy = t.tasks[task.id];
+          const isShare = task.url === "share";
+          return (
+            <TaskCard
+              key={task.id}
+              icon={task.icon}
+              title={copy.title}
+              description={copy.desc}
+              meritLabel={meritLabel(task.merit)}
+              cta={copy.cta}
+              done={done.has(task.id)}
+              href={
+                isShare
+                  ? undefined
+                  : task.url === "random-product"
+                    ? randomProduct
+                    : task.url
+              }
+              onActivate={(event) => {
+                if (isShare) void share();
+                complete(task.id, task.merit, event, isShare);
+              }}
+            />
+          );
+        })}
+      </div>
+
+      <h2 className="sec-title products-title">{t.productsTitle}</h2>
+      <p className="sec-sub">{t.productsSub}</p>
+      {products.length ? (
+        <div className="tasks">
+          {products.map((product) => (
+            <TaskCard
+              key={product.url}
+              icon={<ProductThumb product={product} />}
+              title={product.title}
+              description={product.description}
+              clampDescription
+              meritLabel={meritLabel(productMerit)}
+              cta={t.viewProduct}
+              done={done.has(product.url)}
+              href={product.url}
+              onActivate={(event) => complete(product.url, productMerit, event)}
+            />
+          ))}
+        </div>
+      ) : (
+        <p className="sec-sub">{t.emptyProducts}</p>
+      )}
+
+      <div className="disclaimer">
+        ℹ️ <b>{t.disclaimerBold}</b> {t.disclaimerText}
+      </div>
+      <div style={{ textAlign: "center", margin: "34px 0 10px" }}>
+        <p style={{ color: "var(--muted)", margin: "0 0 12px" }}>{t.backToQrQuestion}</p>
+        <a className="btn btn-red" href="/#donate">
+          {t.backToQr}
+        </a>
+      </div>
     </div>
   );
 }

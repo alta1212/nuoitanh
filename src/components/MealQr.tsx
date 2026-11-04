@@ -20,44 +20,40 @@ export default function MealQr({
   }
 
   return (
-    <div className="qr-area" aria-busy={state === "loading"}>
-      {state !== "error" && (
-        <a
-          className="qr-link"
-          href={url}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={t.openQrLabel}
-        >
-          <img
-            key={imageUrl}
-            src={imageUrl}
-            width="512"
-            height="512"
-            alt={t.qrAlt}
-            onLoad={() => setState("loaded")}
-            onError={() => setState("error")}
-          />
-        </a>
-      )}
+    <>
+      <div className="qr-box" aria-busy={state === "loading"}>
+        {state === "error" ? (
+          <div className="qr-message" role="status">
+            <p>{t.qrError}</p>
+            <button className="btn btn-ghost" type="button" onClick={retry}>
+              {t.qrRetry}
+            </button>
+          </div>
+        ) : (
+          <a
+            className="qr-link"
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label={t.openQrLabel}
+          >
+            <img
+              key={imageUrl}
+              src={imageUrl}
+              width="512"
+              height="512"
+              alt={t.qrAlt}
+              onLoad={() => setState("loaded")}
+              onError={() => setState("error")}
+            />
+          </a>
+        )}
+      </div>
       {state === "loading" && (
-        <p className="qr-feedback" role="status">
+        <p className="qr-caption" role="status" style={{ margin: "12px 0 0" }}>
           {t.qrLoading}
         </p>
       )}
-      {state === "error" && (
-        <div className="qr-error" role="status">
-          <p>{t.qrError}</p>
-          <button
-            className="action action-secondary"
-            type="button"
-            onClick={retry}
-          >
-            {t.qrRetry}
-          </button>
-        </div>
-      )}
-      {state === "loaded" && <p className="qr-caption">{t.qrCaption}</p>}
-    </div>
+    </>
   );
 }
