@@ -18,20 +18,24 @@ interface Particle {
 }
 
 const emojis = ["🪙", "💸", "💰", "🪙", "✨", "🍜", "🧋"];
+const MAX_PARTICLES = 60;
+const BURST_COOLDOWN_MS = 300;
 
 export function useCoinRain() {
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const parts = useRef<Particle[]>([]);
   const raf = useRef<number | null>(null);
+  const lastBurst = useRef(-Infinity);
 
   useEffect(() => {
     const canvas = canvasRef.current!;
     const size = () => {
-      canvas.width = innerWidth * devicePixelRatio;
-      canvas.height = innerHeight * devicePixelRatio;
+      const scale = Math.min(devicePixelRatio, 1.5);
+      canvas.width = innerWidth * scale;
+      canvas.height = innerHeight * scale;
       canvas
         .getContext("2d")!
-        .setTransform(devicePixelRatio, 0, 0, devicePixelRatio, 0, 0);
+        .setTransform(scale, 0, 0, scale, 0, 0);
     };
     size();
     addEventListener("resize", size);
@@ -39,6 +43,8 @@ export function useCoinRain() {
       removeEventListener("resize", size);
       if (raf.current !== null) cancelAnimationFrame(raf.current);
       raf.current = null;
+      parts.current = [];
+      lastBurst.current = -Infinity;
     };
   }, []);
 
@@ -73,9 +79,13 @@ export function useCoinRain() {
   const burst = useCallback(
     (count: number, origin?: BurstOrigin | null) => {
       if (matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-      const ox = origin?.clientX ? origin.clientX : innerWidth / 2;
-      const oy = origin?.clientY ? origin.clientY : innerHeight / 2;
-      for (let i = 0; i < count; i++) {
+      const now = performance.now();
+      const available = Math.min(Math.floor(count), MAX_PARTICLES - parts.current.length);
+      if (!Number.isFinite(available) || available <= 0 || now - lastBurst.current < BURST_COOLDOWN_MS) return;
+      lastBurst.current = now;
+      const ox = origin?.clientX ?? innerWidth / 2;
+      const oy = origin?.clientY ?? innerHeight / 2;
+      for (let i = 0; i < available; i++) {
         const fromTop = i % 2 === 0;
         parts.current.push({
           x: fromTop ? Math.random() * innerWidth : ox,
