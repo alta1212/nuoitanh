@@ -1,4 +1,4 @@
-import { useState, type MouseEvent } from "react";
+import { useEffect, useState, type MouseEvent } from "react";
 import { useFx } from "../components/FxProvider";
 import TaskCard from "../components/TaskCard";
 import { productMerit, tasks } from "../data/fund";
@@ -20,9 +20,11 @@ export default function FreeFeedPage({ locale }: { locale: Locale }) {
   const { toast, burst } = useFx();
   const [done, setDone] = useState<ReadonlySet<string>>(new Set());
   const [merit, setMerit] = useState(0);
-  const [randomProduct] = useState(
-    () => products[Math.floor(Math.random() * products.length)]?.url,
-  );
+  // HTML prerender dùng sản phẩm đầu tiên; chọn ngẫu nhiên sau khi hydrate để không lệch.
+  const [randomProduct, setRandomProduct] = useState(products[0]?.url);
+  useEffect(() => {
+    setRandomProduct(products[Math.floor(Math.random() * products.length)]?.url);
+  }, []);
 
   const visibleTasks = tasks.filter(
     (task) => task.url && (task.url !== "random-product" || randomProduct),

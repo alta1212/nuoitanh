@@ -1,5 +1,7 @@
 export type Locale = "vi" | "en";
 
+export const defaultLocale: Locale = "vi";
+
 export const localeStorageKey = "nuoitanh-locale";
 
 export function resolveLocale(

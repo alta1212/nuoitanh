@@ -7,7 +7,7 @@ export default function SiteFooter({ locale }: { locale: Locale }) {
   return (
     <footer>
       <div className="wrap">
-        <div>
+        <div suppressHydrationWarning>
           © {new Date().getFullYear()} {t.footerRights}
         </div>
         <div>{t.footerAddress}</div>

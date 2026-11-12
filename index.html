@@ -44,6 +44,14 @@
     </script>
   </head>
   <body>
+    <script>
+      // Bật dark mode trước khi vẽ để HTML prerender (luôn là nền sáng) không bị nháy.
+      try {
+        var saved = localStorage.getItem("dark");
+        var hour = new Date().getHours();
+        if (saved === "1" || (saved === null && (hour >= 22 || hour < 5))) document.body.classList.add("dark");
+      } catch (e) {}
+    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

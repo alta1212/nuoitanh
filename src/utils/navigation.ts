@@ -1,7 +1,7 @@
 export const freePagePath = "/free-feed";
 
-export function isFreePage() {
-  return window.location.pathname.startsWith(freePagePath);
+export function isFreePage(pathname: string) {
+  return pathname.startsWith(freePagePath);
 }
 
 export function goDonate() {

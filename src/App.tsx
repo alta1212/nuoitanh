@@ -7,12 +7,19 @@ import SiteHeader from "./components/SiteHeader";
 import { messages } from "./i18n";
 import FreeFeedPage from "./pages/FreeFeedPage";
 import HomePage from "./pages/HomePage";
-import { getInitialLocale, saveLocale } from "./utils/locale";
+import { saveLocale, type Locale } from "./utils/locale";
 import { isFreePage } from "./utils/navigation";
 
-export default function App() {
-  const [locale, setLocale] = useState(getInitialLocale);
-  const isFreeFeed = isFreePage();
+interface AppProps {
+  /** Ngôn ngữ lúc render đầu tiên; phải khớp với HTML prerender khi hydrate. */
+  initialLocale: Locale;
+  /** Đường dẫn trang, truyền vào để render được cả ở server lẫn client. */
+  path: string;
+}
+
+export default function App({ initialLocale, path }: AppProps) {
+  const [locale, setLocale] = useState(initialLocale);
+  const isFreeFeed = isFreePage(path);
   const t = messages[locale];
 
   useEffect(() => {

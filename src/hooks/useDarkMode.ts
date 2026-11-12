@@ -15,7 +15,10 @@ function getInitialDark() {
 }
 
 export function useDarkMode() {
-  const [dark, setDark] = useState(getInitialDark);
+  // Server không biết giờ/lựa chọn của khách: render "sáng" rồi sửa ngay trước khi vẽ.
+  const [dark, setDark] = useState(false);
+
+  useLayoutEffect(() => setDark(getInitialDark()), []);
 
   useLayoutEffect(() => {
     document.body.classList.toggle("dark", dark);
