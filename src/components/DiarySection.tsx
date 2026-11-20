@@ -22,7 +22,7 @@ export default function DiarySection({ locale }: { locale: Locale }) {
         observer.disconnect();
         setCounts(targets.map((target) => (target === null ? null : 0)));
       },
-      { threshold: 0.3 },
+      { threshold: 0, rootMargin: "0px 0px -20% 0px" },
     );
     observer.observe(element);
     return () => observer.disconnect();

@@ -25,7 +25,9 @@ export default function Reveal({
           observer.unobserve(entry.target);
         }
       },
-      { threshold: 0.15 },
+      // threshold phải là 0: khối kệ đồ cao hơn màn hình điện thoại nhiều lần,
+      // đặt theo tỉ lệ thì nó không bao giờ "đủ hiện" và sẽ nằm im ở opacity 0.
+      { threshold: 0, rootMargin: "0px 0px -60px 0px" },
     );
     observer.observe(element);
     return () => {

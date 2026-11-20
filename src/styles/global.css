@@ -267,6 +267,11 @@ footer p+p{margin-top:6px}
 /* ---------- responsive ---------- */
 @media (max-width:620px){
   section{padding:64px 0}
+  /* 17 món mà một cột thì trang dài lê thê: điện thoại xếp hai cột. */
+  .shelf{grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:10px}
+  .item .body{padding:12px 11px 14px;gap:5px}
+  .item h4{font-size:13px}
+  .item .why{font-size:12px}
   .merit .wrap{gap:12px;padding-top:10px;padding-bottom:10px}
   .pts{font-size:22px;min-width:0;display:flex;align-items:baseline;gap:7px}
   .pts small{display:inline}

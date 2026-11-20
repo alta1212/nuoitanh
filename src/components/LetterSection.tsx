@@ -24,7 +24,7 @@ export default function LetterSection({ locale }: { locale: Locale }) {
         observer.disconnect();
         setPosition({ line: 0, char: 0 });
       },
-      { threshold: 0.2 },
+      { threshold: 0, rootMargin: "0px 0px -20% 0px" },
     );
     observer.observe(element);
     return () => observer.disconnect();
