@@ -98,10 +98,10 @@
         "desc": "Tôi sẽ kể về bạn cho con cháu. Nếu tôi sống được tới lúc có con cháu.",
         "toast": "Ân nhân ơi, tên bạn sẽ được nhắc tới trong mâm cơm."
       },
-      "adoptiveParent": {
-        "name": "Bố mẹ nuôi",
-        "desc": "Chính thức nhận tôi làm con. Tôi sẽ gọi bạn là “ba/mẹ” không cần suy nghĩ.",
-        "toast": "Con chào bố/mẹ ạ. Con hứa sẽ ngoan."
+      "patron": {
+        "name": "Mạnh thường quân",
+        "desc": "Một triệu. Tôi sẽ nhớ bạn đến cuối đời, hoặc ít nhất là đến cuối tháng.",
+        "toast": "Mạnh thường quân xuất hiện. Đêm nay tôi ngủ ngon."
       }
     },
     "customLabel": "Hoặc tự nhập:",
@@ -196,7 +196,7 @@
       "Người tốt bụng",
       "Ân nhân 0 đồng",
       "Bồ Tát miễn phí",
-      "Bố mẹ nuôi tinh thần"
+      "Người tốt cuối cùng của Internet"
     ],
     "foods": [
       "chưa đủ một hạt cơm",

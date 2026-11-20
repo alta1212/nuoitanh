@@ -98,10 +98,10 @@
         "desc": "I will tell my grandchildren about you. If I live long enough to have grandchildren.",
         "toast": "Benefactor, your name will be spoken over the rice bowl."
       },
-      "adoptiveParent": {
-        "name": "Adoptive parent",
-        "desc": "Officially adopting me. I will call you mum or dad without hesitating.",
-        "toast": "Hello mum or dad. I promise to behave."
+      "patron": {
+        "name": "Patron",
+        "desc": "A million dong. I will remember you for life, or at least until the end of the month.",
+        "toast": "A patron appears. Tonight I will sleep well."
       }
     },
     "customLabel": "Or enter your own:",
@@ -196,7 +196,7 @@
       "A kind person",
       "Zero-dong benefactor",
       "Free-of-charge bodhisattva",
-      "Spiritual adoptive parent"
+      "The last good person on the internet"
     ],
     "foods": [
       "not even a grain of rice yet",

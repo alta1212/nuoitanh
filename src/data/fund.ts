@@ -2,7 +2,7 @@
    CẤU HÌNH — SỬA Ở ĐÂY
    Chữ hiển thị nằm trong src/locales/{vi,en}.json
    ===================================================== */
-export type TierId = "passerby" | "goodPerson" | "benefactor" | "adoptiveParent";
+export type TierId = "passerby" | "goodPerson" | "benefactor" | "patron";
 export type TaskId = "shopee" | "share" | "candle" | "tiktok" | "lazada" | "signup";
 
 export const fund = {
@@ -19,11 +19,11 @@ export const fund = {
   lastMealSeconds: 38 * 3600 + 17 * 60 + 42,
 };
 
-export const tiers: { id: TierId; amount: number; fx: number }[] = [
-  { id: "passerby", amount: 10_000, fx: 12 },
-  { id: "goodPerson", amount: 50_000, fx: 24 },
-  { id: "benefactor", amount: 200_000, fx: 45 },
-  { id: "adoptiveParent", amount: 1_000_000, fx: 90 },
+export const tiers: { id: TierId; amount: number }[] = [
+  { id: "passerby", amount: 10_000 },
+  { id: "goodPerson", amount: 50_000 },
+  { id: "benefactor", amount: 200_000 },
+  { id: "patron", amount: 1_000_000 },
 ];
 
 export const defaultTier: TierId = "goodPerson";

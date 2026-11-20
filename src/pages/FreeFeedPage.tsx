@@ -1,4 +1,4 @@
-import { useEffect, useState, type MouseEvent } from "react";
+import { useEffect, useState } from "react";
 import { useFx } from "../components/FxProvider";
 import HoldCandleButton from "../components/HoldCandleButton";
 import MeritMeter from "../components/MeritMeter";
@@ -14,7 +14,7 @@ import type { Locale } from "../utils/locale";
 
 export default function FreeFeedPage({ locale }: { locale: Locale }) {
   const t = messages[locale].free;
-  const { toast, burst } = useFx();
+  const { toast } = useFx();
   const { merit, add, markSeen } = useMerit();
   // HTML prerender dùng sản phẩm đầu tiên; chọn ngẫu nhiên sau khi hydrate để không lệch.
   const [randomProduct, setRandomProduct] = useState(products[0]?.url);
@@ -27,12 +27,11 @@ export default function FreeFeedPage({ locale }: { locale: Locale }) {
     (task) => task.url && (task.url !== "random-product" || randomProduct),
   );
 
-  function reward(key: string, points: number, once: boolean, event?: MouseEvent) {
+  function reward(key: string, points: number, once: boolean) {
     if (!add(key, points, once)) {
       toast(t.alreadyDone);
       return;
     }
-    burst(Math.min(40, 8 + Math.round(points / 8)), event);
     toast(t.meritToast.replace("{merit}", String(points)));
   }
 
@@ -115,7 +114,7 @@ export default function FreeFeedPage({ locale }: { locale: Locale }) {
                       href={task.url === "random-product" ? randomProduct : task.url}
                       target="_blank"
                       rel="sponsored noopener noreferrer"
-                      onClick={(event) => reward(task.id, task.merit, true, event)}
+                      onClick={() => reward(task.id, task.merit, true)}
                     >
                       {copy.cta}
                     </a>

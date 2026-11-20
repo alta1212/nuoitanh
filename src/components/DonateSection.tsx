@@ -19,7 +19,7 @@ function buildQrUrl(amount: number) {
 
 export default function DonateSection({ locale }: { locale: Locale }) {
   const t = messages[locale].home;
-  const { toast, burst } = useFx();
+  const { toast } = useFx();
   const [tierId, setTierId] = useState<TierId | null>(defaultTier);
   const [custom, setCustom] = useState("");
   const customTimer = useRef<number | undefined>(undefined);
@@ -42,12 +42,8 @@ export default function DonateSection({ locale }: { locale: Locale }) {
     setCustom(digits);
     setTierId(null);
     clearTimeout(customTimer.current);
-    const next = parseAmount(digits);
-    if (next !== null) {
-      customTimer.current = window.setTimeout(() => {
-        burst(Math.min(90, 10 + Math.round(next / 20_000)));
-        toast(t.customToast);
-      }, 700);
+    if (parseAmount(digits) !== null) {
+      customTimer.current = window.setTimeout(() => toast(t.customToast), 700);
     }
   }
 
@@ -82,12 +78,11 @@ export default function DonateSection({ locale }: { locale: Locale }) {
               role="radio"
               aria-checked={item.id === tierId}
               key={item.id}
-              onClick={(event) => {
+              onClick={() => {
                 clearTimeout(customTimer.current);
                 setTierId(item.id);
                 setCustom("");
                 toast(t.tiers[item.id].toast);
-                burst(item.fx, event);
               }}
             >
               <span className="nm">{t.tiers[item.id].name}</span>

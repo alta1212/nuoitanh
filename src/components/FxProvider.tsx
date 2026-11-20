@@ -8,11 +8,9 @@ import {
   useState,
   type ReactNode,
 } from "react";
-import { useCoinRain, type BurstOrigin } from "../hooks/useCoinRain";
 
 interface Fx {
   toast: (message: string) => void;
-  burst: (count: number, origin?: BurstOrigin | null) => void;
 }
 
 const FxContext = createContext<Fx | null>(null);
@@ -23,9 +21,8 @@ export function useFx() {
   return fx;
 }
 
-/** Toast và mưa xu, dùng chung cho mọi trang. */
+/** Toast dùng chung cho mọi trang. */
 export default function FxProvider({ children }: { children: ReactNode }) {
-  const { canvasRef, burst } = useCoinRain();
   const [message, setMessage] = useState("");
   const [visible, setVisible] = useState(false);
   const timer = useRef<number | undefined>(undefined);
@@ -39,7 +36,7 @@ export default function FxProvider({ children }: { children: ReactNode }) {
     timer.current = window.setTimeout(() => setVisible(false), 2600);
   }, []);
 
-  const value = useMemo(() => ({ toast, burst }), [toast, burst]);
+  const value = useMemo(() => ({ toast }), [toast]);
 
   return (
     <FxContext.Provider value={value}>
@@ -47,7 +44,6 @@ export default function FxProvider({ children }: { children: ReactNode }) {
       <div className={`toast${visible ? " show" : ""}`} role="status">
         {message}
       </div>
-      <canvas id="fx" ref={canvasRef} aria-hidden="true" />
     </FxContext.Provider>
   );
 }
