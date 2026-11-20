@@ -17,7 +17,7 @@ interface Particle {
   life: number;
 }
 
-const emojis = ["🪙", "💸", "💰", "🪙", "✨", "🍜", "🧋"];
+const emojis = ["🕯️", "✨", "🪙", "🍜", "🥚", "🧋"];
 const MAX_PARTICLES = 60;
 const BURST_COOLDOWN_MS = 300;
 

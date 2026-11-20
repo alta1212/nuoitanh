@@ -1,10 +1,11 @@
 import { useEffect } from "react";
+import DiarySection from "../components/DiarySection";
 import DonateSection from "../components/DonateSection";
 import DonorBoard from "../components/DonorBoard";
 import FaqSection from "../components/FaqSection";
 import Hero from "../components/Hero";
-import ProgressCard from "../components/ProgressCard";
-import StorySection from "../components/StorySection";
+import LetterSection from "../components/LetterSection";
+import PhotoSection from "../components/PhotoSection";
 import type { Locale } from "../utils/locale";
 import { goDonate } from "../utils/navigation";
 
@@ -15,13 +16,14 @@ export default function HomePage({ locale }: { locale: Locale }) {
   }, []);
 
   return (
-    <div className="wrap">
+    <>
       <Hero locale={locale} />
-      <ProgressCard locale={locale} />
-      <StorySection locale={locale} />
+      <PhotoSection locale={locale} />
+      <LetterSection key={locale} locale={locale} />
+      <DiarySection key={`diary-${locale}`} locale={locale} />
       <DonateSection locale={locale} />
       <DonorBoard locale={locale} />
       <FaqSection locale={locale} />
-    </div>
+    </>
   );
 }

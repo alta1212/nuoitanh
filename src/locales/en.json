@@ -1,210 +1,326 @@
 {
   "meta": {
-    "homeTitle": "The Emergency Relief Fund For Myself | Nuôi Tanh",
-    "feedTitle": "The ₫0 way to help | Nuôi Tanh",
-    "description": "A public, transparent and shameless begging page. Scan the QR to feed Tanh a meal, or help for ₫0."
+    "homeTitle": "Tonight, Tanh is hungry again | Nuôi Tanh",
+    "feedTitle": "Donate the ₫0 way | Nuôi Tanh",
+    "description": "A true story. Whether it has a happy ending is up to you. Scan the QR to buy Tanh a meal, or help for free."
   },
   "common": {
-    "brandLine1": "The Emergency Relief Fund",
-    "brandLine2": "For Myself",
-    "brandCaption": "Founded: when the money ran out",
-    "homeLabel": "The Emergency Relief Fund For Myself, back to home",
+    "brand": "Emergency Relief Fund For Myself",
+    "homeLabel": "Emergency Relief Fund For Myself, back to the main page",
     "navigationLabel": "Page tools",
     "skipLink": "Skip to main content",
-    "languageLabel": "Choose language",
+    "languageLabel": "Choose a language",
     "vietnamese": "Vietnamese",
     "english": "English",
-    "marquee": "🚨 EMERGENCY: VICTIM IS HUNGRY · CONDITION: CRITICAL (STOMACH GROWLING) · ALL DONATIONS ACCEPTED, LARGE ONES ESPECIALLY · ",
-    "musicTitle": "Documentary background music",
-    "musicOn": "Sad music",
-    "musicOff": "Stop music",
-    "musicToast": "🎻 Documentary music playing… you may now cry",
-    "musicError": "Your browser can't play the music 😢",
-    "darkTitle": "Dark mode",
-    "nightLabel": "Night",
-    "dayLabel": "Day",
-    "nightToast": "🌙 Hungry again tonight…",
-    "footerRights": "The Emergency Relief Fund For Myself. All rights reserved, except the right to eat well.",
-    "footerAddress": "Headquarters: in front of the fridge · Hotline: stomach growls"
+    "marquee": " · Bulletin at 2:07 in the morning · Fridge: empty · Wallet: empty · Soul: also a little empty · Last sighting of meat: cannot recall · Status: still hopeful, but not very ·",
+    "marqueeFree": " · All donation sizes accepted, including ₫0 · One click is one spoonful of rice · No money is fine, a kind heart is enough · The victim is still hungry ·",
+    "musicTitle": "Documentary soundtrack",
+    "musicOn": "Play the soundtrack",
+    "musicOff": "Now playing (get a tissue ready)",
+    "musicToast": "The music is on. The tears are up to you 🎻",
+    "musicError": "Your browser cannot play the music 😢",
+    "footerRights": "Emergency Relief Fund For Myself. All rights reserved, except the right to eat.",
+    "footerAddress": "Headquarters: in front of the fridge · Hotline: a growling stomach"
   },
   "exit": {
-    "title": "You're really leaving?",
-    "text": "I just heard my stomach growl. It's calling your name.",
-    "stay": "Fine, I'll stay and feed you",
-    "free": "Feed for ₫0 only",
-    "leave": "Leave anyway (heartless 💔)",
-    "leaveToast": "Go on… I'll be fine (I won't) 💔"
+    "title": "You are really leaving?",
+    "text": "That is fine. I am used to being left at 2 in the morning.",
+    "stay": "Fine, I will stay and feed you",
+    "free": "Let me help for free",
+    "leave": "Leaving anyway",
+    "leaveToast": "Go on… I will be fine (I will not be) 💔"
   },
   "home": {
-    "kicker": "Emergency appeal #001",
-    "dayTitleBefore": "Please save ",
-    "dayTitleEm": "a hungry",
-    "dayTitleAfter": " soul.",
-    "nightTitleBefore": "Tonight, ",
-    "nightTitleEm": "I'm hungry again.",
-    "growl": "🌙 grrr… grrr grrr… (stomach, 2 a.m.)",
-    "ledeBefore": "Every day, ",
-    "ledeBold": "one person",
-    "ledeAfter": " stands before an empty fridge and asks, “what did I do wrong?” That person is me. Your contribution will change my life for about 1–2 meals.",
+    "kicker": "A true story",
+    "titleLine1": "Tonight,",
+    "titleLine2": "Tanh is ",
+    "titleEm": "hungry",
+    "titleAfter": " again.",
+    "sub": "Nobody knows. Nobody asks. Only the rain on the porch and a stomach growling in a small room.",
+    "timerLabel": "Last full meal was",
+    "timerPending": "—",
+    "timerFormat": "{hours}h {minutes}m {seconds}s ago",
+    "scrollCue": "Scroll down… if you are strong enough",
+    "photoLabel": "The last photograph",
+    "photoBar": "CENSORED · FOR WHAT LITTLE DIGNITY REMAINS",
+    "photoCaption": "opening the banking app",
+    "photoText1": "This is the moment Tanh opened the banking app on the 26th. The photo is 100% real. Those eyes once believed in the future.",
+    "photoText2": "Now they only believe in instant noodles.",
+    "victimAlt": "Photo of the victim, partly censored",
+    "letterLabel": "The letter nobody sent",
+    "letter": [
+      "To the stranger reading these lines,",
+      "I do not know who you are. Perhaps you are in bed, scrolling on your phone, with a full stomach. I am glad for you. Truly.",
+      "As for me, I just stood in front of the fridge for the fourth time tonight. Every time I open it there is one egg and a bottle of chilli sauce that expired back when I still believed in love.",
+      "I am not asking for much. Just one meal with meat in it, ordered without checking the price column first.",
+      "If you do not help, I will not blame you. I will quietly eat the last packet of noodles, and think about you."
+    ],
+    "letterSign": "— Tanh, still waiting",
+    "diaryLabel": "One month of diary",
+    "diaryTitle1": "My salary passes through my life",
+    "diaryTitle2": "like a gust of wind.",
+    "diary": [
+      { "day": "Day 1", "text": "Payday. I smiled. I ordered bubble tea with every topping. I thought I was rich." },
+      { "day": "Day 3", "text": "Paid the rent, the electricity, and last month's debt to myself." },
+      { "day": "Day 5", "text": "Started cooking at home. Bought 30 packets of noodles “just in case”." },
+      { "day": "Day 15", "text": "Ate the noodles without the oil sachet. Saving it." },
+      { "day": "Day 22", "text": "Used the oil sachet from day 15. Felt like a man who plans ahead." },
+      { "day": "Day 26 — today", "text": "One packet of noodles left, one egg, and you." }
+    ],
     "stats": [
-      { "value": "3 days", "label": "without bubble tea" },
-      { "value": "97%", "label": "of meals are instant noodles" },
-      { "value": "₫0", "label": "current balance (approximately)" }
+      { "value": "97", "label": "of meals are instant noodles (%)" },
+      { "value": "3", "label": "days without bubble tea" },
+      { "value": "₫0", "label": "balance remaining" }
     ],
-    "ctaDonate": "💝 Help now",
-    "ctaFree": "🙏 Help for ₫0",
-    "noTexts": [
-      "No thanks",
-      "Catch me if you can 😝",
-      "Missed!",
-      "Come on…",
-      "Think again 🥺",
-      "This button is broken",
-      "You can't run from this"
-    ],
-    "noModalTitle": "System error",
-    "noModalText": "The “No thanks” option does not exist in this universe. Please choose again.",
-    "noModalOk": "Yes, I'll help",
-    "noteLine1": "Please help me 🥺",
-    "noteLine2": "(100% real photo)",
-    "victimAlt": "The victim",
-    "photoBar": "HIDDEN TO SAVE FACE",
-    "captionVictim": "Victim:",
-    "captionAfter": "— photographed while checking the account balance.",
-    "stampLine1": "Verified",
-    "stampLine2": "broke",
-    "raisedLabel": "Raised so far",
+    "donateLabel": "You can change the ending",
+    "donateTitle1": "One glass of iced tea from you",
+    "donateTitle2": "is ",
+    "donateTitleEm": "dinner",
+    "donateTitle3": " for me.",
+    "raisedLabel": "Received",
     "goalLabel": "Goal:",
     "percentReached": "{percent}% reached",
-    "timeLeft": "⏳ Time left: until it's enough",
-    "storyTitle": "The victim's circumstances",
-    "storySub": "Numbers that make every reader… scroll past.",
-    "story": [
-      { "title": "An empty wallet", "text": "All that remains is one old bubble tea receipt and a lot of memories." },
-      { "title": "Payday, the thief", "text": "The salary arrives and vanishes, leaving the victim with 26 more days in the month." },
-      { "title": "A simple dream", "text": "To eat a meal with meat without checking the price before ordering." }
-    ],
-    "donateTitle": "Choose your level of kindness",
-    "donateSub": "Every level is acknowledged with infinite gratitude (and no refunds).",
+    "timeLeft": "Time left: until it is enough",
+    "tiersLabel": "Choose a donation level",
     "tiers": {
       "passerby": {
         "name": "Passer-by",
-        "desc": "Saw it, felt a little sorry, moved on.",
-        "toast": "Thank you, stranger! You just saved me from skipping a meal 🍜"
+        "desc": "Noodles with an egg in them. I will remember you until tomorrow.",
+        "toast": "Thank you, stranger. Tonight there is an egg."
       },
       "goodPerson": {
         "name": "Good person",
-        "desc": "Enough for a fully loaded bubble tea.",
-        "toast": "Good person, today's bubble tea is all thanks to you 🧋"
+        "desc": "A rice plate with pork ribs. The first time I get to chew this week.",
+        "toast": "A meal with meat. I will eat slowly to remember you longer."
       },
-      "bodhisattva": {
-        "name": "Living Bodhisattva",
-        "desc": "Merit +9999, rich in the next life.",
-        "toast": "A Bodhisattva appears! Your merit just went up by 9999 🙏"
+      "benefactor": {
+        "name": "Benefactor",
+        "desc": "I will tell my grandchildren about you. If I live long enough to have grandchildren.",
+        "toast": "Benefactor, your name will be spoken over the rice bowl."
       },
       "adoptiveParent": {
         "name": "Adoptive parent",
-        "desc": "Officially adopt me as your child.",
-        "toast": "Hello, mum/dad 🙇 I promise to behave!"
+        "desc": "Officially adopting me. I will call you mum or dad without hesitating.",
+        "toast": "Hello mum or dad. I promise to behave."
       }
     },
-    "customPlaceholder": "Or enter any amount you like…",
+    "customLabel": "Or enter your own:",
+    "customPlaceholder": "e.g. 30000",
     "customAny": "Any amount",
     "customRare": "A rare good person",
     "customTycoon": "Anonymous tycoon",
-    "customToast": "Lovely number! Time to scan the QR ✨",
-    "amountTooSmall": "Enter at least ₫2,000 to get a QR code.",
-    "freeCtaBold": "Out of money?",
-    "freeCtaText": "No problem, you can still feed me without spending a thing.",
-    "freeCtaAction": "Help for ₫0 →",
-    "openQrLabel": "Open the full-size bank transfer QR code in a new tab",
-    "qrAlt": "Bank transfer QR code to feed Tanh",
-    "qrCaption": "Scan with any banking app · amount already filled in",
-    "qrLoading": "Preparing your QR code…",
-    "qrError": "Could not load the QR code. Try again or use the bank details below.",
-    "qrRetry": "Reload QR code",
+    "customToast": "A beautiful number. Let us scan that QR.",
+    "amountTooSmall": "Enter at least ₫2,000 to generate the QR code.",
     "bank": "Bank",
     "accountNumber": "Account number",
     "recipient": "Account holder",
-    "memoLabel": "Message",
+    "memoLabel": "Transfer note",
+    "amountLabel": "Amount",
     "copy": "Copy",
-    "copied": "Copied: {value}",
-    "copyError": "Could not copy, please select it by hand",
-    "donorsTitle": "🏆 Hall of benefactors",
-    "donorsSub": "The great people who helped me live a few meals longer. Your names shall be engraved (on this website).",
-    "donors": [
-      { "name": "Elon Mú", "amount": "1 used rocket", "note": "“Also bought your banking app. Your balance is now a meme.”" },
-      { "name": "Mr Beat", "amount": "$1 million*", "note": "*Payable only after surviving 100 days inside the fridge" },
-      { "name": "Stewie Griffin", "amount": "1 death ray", "note": "“Eat, mortal. You'll need your strength to serve me.”" },
-      { "name": "Thanos", "amount": "½ a bowl of rice", "note": "“Perfectly balanced, as all meals should be”" },
-      { "name": "Doraemon", "amount": "1 dorayaki", "note": "From the magic pocket. Best before the 22nd century." }
+    "copied": "Copied: {value}. Your hands are warm. 🕯️",
+    "copyError": "Copying failed, please select the text manually",
+    "payNote": "Once you have scanned, you can sleep well. So can I.",
+    "openQrLabel": "Open the full size transfer QR code in a new tab",
+    "qrAlt": "Bank transfer QR code to feed Tanh",
+    "qrCaption": "Scan with any banking app · the amount is filled in",
+    "qrLoading": "Preparing the QR code…",
+    "qrError": "The QR code did not load. Retry, or transfer using the details next to it.",
+    "qrRetry": "Reload the QR code",
+    "freeCta": "🙏 I have no money, but I have a heart (₫0)",
+    "refuse": "I do not want to help",
+    "refuseSteps": [
+      { "title": "It is all right.", "text": "I understand. Everyone has their own troubles. I will manage… probably." },
+      { "title": "Really, it is fine.", "text": "I just looked at the last packet of noodles. It looked back at me." },
+      { "title": "Mm.", "text": "The rain is heavier now. Even the sky is sad on my behalf." },
+      { "title": "…", "text": "I am turning off the light. It saves electricity." }
     ],
-    "faqTitle": "Frequently asked questions",
-    "faqSub": "And answers so honest they hurt.",
+    "refuseChange": "Fine… let me help",
+    "refuseStill": "Still no",
+    "donorsLabel": "Hall of benefactors",
+    "donorsTitle1": "The golden hearts",
+    "donorsTitle2": "that passed through my life.",
+    "donorsSub": "They came. They promised. Nobody has completed a transfer yet.",
+    "donors": [
+      { "name": "Elon Mú", "note": "Bought your banking app while he was at it. Your balance is a meme now.", "gift": "1 used rocket" },
+      { "name": "Mr Beat", "note": "Pays only if you survive 100 days inside a fridge.", "gift": "1 million dollars" },
+      { "name": "Stewie Griffin", "note": "Eat, mortal. You still have the strength to serve me.", "gift": "1 death ray" },
+      { "name": "Thanos", "note": "Perfectly balanced, as every meal should be.", "gift": "½ bowl of rice" },
+      { "name": "Doraemon", "note": "Taken from the magic pocket, best before the 22nd century.", "gift": "1 dorayaki" },
+      { "name": "Thach Sanh", "note": "Sent a magic rice pot that never empties. Currently held at customs.", "gift": "1 rice pot (in customs)" },
+      { "name": "The Buddha", "note": "Why are you crying, child? … Ah, hungry. The Buddha is also struggling.", "gift": "1 kind question" },
+      { "name": "The Genie", "note": "Three wishes. Two were returned by the bank for an incorrect transfer note.", "gift": "1 remaining wish" },
+      { "name": "Chu Cuoi", "note": "Transferred from the moon. Processing, expected by next full moon.", "gift": "1 promise" },
+      { "name": "Son Tinh", "note": "Nine-tusked elephants, nine-spurred roosters, nine-maned horses. Shipping is pricey.", "gift": "Undeliverable" },
+      { "name": "That kid your parents compare you to", "note": "Donated 500k. With a comparison attached.", "gift": "Emotional pressure" }
+    ],
+    "donorYouName": "You?",
+    "donorYouNote": "This spot is still empty. The first real transfer gets their name here.",
+    "donorYouAction": "Claim the spot ↑",
+    "faqLabel": "Questions in the night",
     "faq": [
       {
-        "question": "What will the money be used for?",
-        "answer": "100% goes to a humanitarian cause: feeding me. Financial reports are published as photos of food."
-      },
-      {
-        "question": "Is this fund licensed?",
-        "answer": "No. But there is a driving licence, if that makes you feel better."
-      },
-      {
-        "question": "Can I get a refund?",
-        "answer": "You will be refunded with a heartfelt thank you, possibly with a sticker."
+        "question": "Where does the money go?",
+        "answer": "Into a stomach. 100%. The financial report is a photo of a dinner tray."
       },
       {
         "question": "Is this a scam?",
-        "answer": "No, this is a public, transparent and shameless begging page. You know exactly who you're feeding."
+        "answer": "No. This is begging in the open: transparent and shameless. You know exactly who you are feeding."
+      },
+      {
+        "question": "Is the fund licensed?",
+        "answer": "No. But there is a driving licence, if that makes you feel better."
+      },
+      {
+        "question": "Are refunds available?",
+        "answer": "No. But there is a sincere thank you, possibly with a sticker."
       }
     ]
   },
   "free": {
-    "back": "← Back to the begging page",
-    "kicker": "The “Help for ₫0” programme",
-    "titleBefore": "The list of ",
-    "titleEm": "₫0 good deeds",
-    "lede": "No money? Me neither. We understand each other. Complete the tasks below to feed me without losing a single đồng.",
-    "meritCounter": "🪷 Your merit:",
-    "meritLabel": "🪷 +{merit} merit",
-    "meritToast": "Merit +{merit}! You'll be rich in the next life 🪷",
+    "back": "← Emergency Relief Fund For Myself",
+    "barNote": "The ₫0 donation programme",
+    "label": "For those who are also struggling",
+    "title1": "You have no money.",
+    "title2": "Neither ",
+    "titleEm": "do I",
+    "titleAfter": ".",
+    "sub": "Then we are poor together. You can still buy me a meal without spending a thing. Every small deed is one more candle lit in this dark room.",
+    "meritUnit": "merit points",
+    "meritAria": "Your merit points",
+    "levelLabel": "Title:",
+    "nextLevel": "{points} points more to become “{level}”",
+    "maxLevel": "the highest realm has been reached",
+    "levels": [
+      "Cold-hearted passer-by",
+      "Someone with a little heart",
+      "A kind person",
+      "Zero-dong benefactor",
+      "Free-of-charge bodhisattva",
+      "Spiritual adoptive parent"
+    ],
+    "foods": [
+      "not even a grain of rice yet",
+      "1 noodle seasoning sachet",
+      "1 egg",
+      "1 packet of noodles with an egg",
+      "1 pate baguette",
+      "1 plate of broken rice (imaginary)"
+    ],
+    "tasksLabel": "Three free ways to end the hunger",
+    "tasksTitle": "One finger is all it takes.",
+    "meritLabel": "+{merit} points",
+    "meritToast": "+{merit} merit points. My stomach just growled a little quieter.",
+    "alreadyDone": "You have already done this one. I still remember. 🥺",
     "tasks": {
       "shopee": {
-        "title": "Buy what you already planned to buy on Shopee",
-        "desc": "You're buying it anyway. Buy through this link and I get to eat.",
-        "cta": "Go to Shopee"
+        "title": "Shop through my link",
+        "desc": "You were going to buy it anyway. Walk past my door: the price is the same, but I get a few dong of commission for an egg.",
+        "cta": "Open Shopee"
+      },
+      "share": {
+        "title": "Send this to a rich friend",
+        "desc": "Everyone has one of those friends. You know exactly who. Send it to them, then wait quietly.",
+        "cta": "Share the page"
+      },
+      "candle": {
+        "title": "Light a candle",
+        "desc": "Hold the button for 3 seconds and think of me. No nutritional value, but it warms the heart.",
+        "cta": "Hold to light the candle"
       },
       "tiktok": {
-        "title": "Hunt for TikTok Shop deals",
-        "desc": "Check out while scrolling and I get a few thousand đồng.",
+        "title": "Hunt deals on TikTok Shop",
+        "desc": "You are scrolling anyway; check out there and I get a few thousand.",
         "cta": "Open TikTok Shop"
       },
       "lazada": {
-        "title": "Take a stroll around Lazada",
-        "desc": "No need to buy, just stop by and give me hope.",
+        "title": "Take a lap around Lazada",
+        "desc": "You do not have to buy anything, just stop by and give me hope.",
         "cta": "Go to Lazada"
       },
       "signup": {
-        "title": "Install the app and sign up",
-        "desc": "2 minutes of your time, 1 meal of mine saved.",
+        "title": "Install an app and sign up",
+        "desc": "Two minutes of your time, one meal of mine.",
         "cta": "Sign up"
-      },
-      "share": {
-        "title": "Share this page with one rich person",
-        "desc": "You have no money, but you have friends who do.",
-        "cta": "Copy link"
       }
     },
-    "shareCopied": "Link copied! Send it to the richest person you know",
-    "shareError": "Please copy the link from the address bar and send it on",
-    "productsTitle": "What's on the shelf?",
-    "productsSub": "See something interesting? Take a look. Products open in a new tab.",
+    "candleAria": "Hold for 3 seconds to light the candle",
+    "candleStages": [
+      "Striking the match…",
+      "The flame is catching…",
+      "Almost there, do not let go…",
+      "It is lit!"
+    ],
+    "candleDone": "Candle lit 🕯️",
+    "candleLetGo": "Do not let go of my hand… 🥺",
+    "candleAlready": "Your candle is still burning. 🕯️",
+    "shareTitle": "Emergency Relief Fund For Myself",
+    "shareText": "Someone is hungry. Can you help? 🥺",
+    "shareCopied": "Link copied. Send it to the richest friend you have.",
+    "shareError": "Please copy the link from the address bar and send it",
+    "shelfLabel": "What is on the shelf?",
+    "shelfTitle1": "The things I stare at",
+    "shelfTitle2": "but have never ",
+    "shelfTitleEm": "dared to buy",
+    "shelfTitleAfter": ".",
+    "shelfSub": "Buy them for yourself instead. I will stand outside and look through the glass. Each item you open: +{merit} points.",
+    "categoriesLabel": "Filter by category",
+    "categories": {
+      "all": "Everything",
+      "keyboard": "Keyboards",
+      "tech": "Tech",
+      "clothes": "Clothes",
+      "home": "Household"
+    },
+    "notes": {
+      "keyboardRgb": "Code on this and the bugs probably fix themselves.",
+      "keyboardF61": "The clacking sounds like money falling.",
+      "keyboardF61Alt": "Buy two: one to type on, one to admire.",
+      "wifi5g": "With internet I can still browse and beg.",
+      "jerseyVn": "Wear it and even hunger feels patriotic.",
+      "menSet": "Even begging deserves a tidy outfit.",
+      "sportSet": "Go for a run and forget the hunger.",
+      "menSetAlt": "Looking rich is the first step to being rich.",
+      "sportShorts": "Airy, like my wallet.",
+      "menSetNew": "New shirt, old sorrow.",
+      "sportSetAlt": "Wear it to ask for a raise.",
+      "sportShirt": "Absorbs sweat, not tears.",
+      "fashion": "Good looks are not edible, but I still want them.",
+      "tissueCombo": "You will need these after the main page.",
+      "micellar": "Removes make-up, not poverty.",
+      "toiletPaper": "The one thing my home never runs out of… actually, no.",
+      "tissueBox": "So the tissues have a home. More than I have."
+    },
     "viewProduct": "View on Shopee",
-    "emptyProducts": "The shelf is empty. Please check back later.",
+    "emptyProducts": "The shelf is empty. Please come back later.",
     "disclaimerBold": "Transparency:",
-    "disclaimerText": "The buttons above are affiliate links. You pay the usual price, nothing extra. The platform pays me a few thousand đồng in commission, enough for one more pack of noodles.",
-    "backToQrQuestion": "Changed your mind and want to feed me with real money?",
-    "backToQr": "💝 Back to the QR code"
+    "disclaimerText": "the Shopee links here are affiliate links. You pay the normal price, I receive a small commission, enough to avoid eating noodles with nothing in them.",
+    "receiptTitle": "MERIT RECEIPT",
+    "receiptOrg": "Emergency Relief Fund For Myself",
+    "receiptAddress": "Address: in front of the fridge",
+    "receiptTotal": "TOTAL",
+    "receiptPoints": "{points} points",
+    "receiptMoney": "Amount due",
+    "receiptMoneyValue": "₫0",
+    "receiptConvert": "Converts to",
+    "receiptLabels": {
+      "shopee": "Shopping through the link",
+      "share": "Sharing with a rich friend",
+      "candle": "Lighting a candle for me",
+      "shelf": "Browsing the shelf for me",
+      "tiktok": "Hunting TikTok deals",
+      "lazada": "Stopping by Lazada",
+      "signup": "Signing up for an app"
+    },
+    "receiptEmpty": "Nothing yet. But I am still waiting.",
+    "receiptLow": "Thank you. I can feel the warmth, even if it is not the warmth of rice.",
+    "receiptHigh": "You are a good person. With another ₫10,000 you would be an even better one.",
+    "endLabel": "If you have read this far",
+    "endTitle1": "…then perhaps your pocket",
+    "endTitle2": "still holds ",
+    "endTitleEm": "a little something",
+    "endTitleAfter": ".",
+    "endSub": "Ten thousand dong. Noodles with an egg. I promise to eat slowly so I remember you longer.",
+    "endDonate": "💝 Fine, I will transfer real money",
+    "endHome": "Back to the main page"
   }
 }

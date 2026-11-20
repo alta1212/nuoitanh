@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AlertBar from "./components/AlertBar";
 import ExitIntentModal from "./components/ExitIntentModal";
 import FxProvider from "./components/FxProvider";
+import RainCanvas from "./components/RainCanvas";
 import SiteFooter from "./components/SiteFooter";
 import SiteHeader from "./components/SiteHeader";
 import { messages } from "./i18n";
@@ -34,12 +35,12 @@ export default function App({ initialLocale, path }: AppProps) {
 
   return (
     <FxProvider>
-      <div className="stars" />
+      <RainCanvas />
       <a className="skip-link" href="#main-content">
         {t.common.skipLink}
       </a>
-      <AlertBar text={t.common.marquee} />
-      <SiteHeader locale={locale} onLocaleChange={setLocale} />
+      <AlertBar text={isFreeFeed ? t.common.marqueeFree : t.common.marquee} />
+      <SiteHeader locale={locale} freeFeed={isFreeFeed} onLocaleChange={setLocale} />
       <main id="main-content" tabIndex={-1}>
         {isFreeFeed ? <FreeFeedPage locale={locale} /> : <HomePage locale={locale} />}
       </main>

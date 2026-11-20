@@ -1,179 +1,231 @@
 {
   "meta": {
-    "homeTitle": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi | Nuôi Tanh",
+    "homeTitle": "Đêm nay, Tanh lại đói | Nuôi Tanh",
     "feedTitle": "Ủng hộ kiểu 0đ | Nuôi Tanh",
-    "description": "Trang xin tiền công khai, minh bạch và trơ trẽn. Quét QR nuôi Tanh một bữa hoặc ủng hộ kiểu 0đ."
+    "description": "Một câu chuyện có thật, kết thúc có hậu hay không là tùy bạn. Quét QR mời Tanh một bữa, hoặc ủng hộ kiểu 0đ."
   },
   "common": {
-    "brandLine1": "Quỹ Cứu Trợ Khẩn Cấp",
-    "brandLine2": "Cho Chính Tôi",
-    "brandCaption": "Thành lập: lúc hết tiền",
+    "brand": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi",
     "homeLabel": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi, về trang chính",
     "navigationLabel": "Công cụ trang",
     "skipLink": "Đến nội dung chính",
     "languageLabel": "Chọn ngôn ngữ",
     "vietnamese": "Tiếng Việt",
     "english": "Tiếng Anh",
-    "marquee": "🚨 KHẨN CẤP: NẠN NHÂN ĐANG ĐÓI · TÌNH TRẠNG: NGUY KỊCH (BỤNG KÊU) · MỌI SỰ ĐÓNG GÓP DÙ NHỎ ĐỀU ĐƯỢC NHẬN, DÙ LỚN CÀNG ĐƯỢC NHẬN · ",
+    "marquee": " · Bản tin lúc 2 giờ 07 sáng · Tủ lạnh: trống · Ví: trống · Tâm hồn: cũng hơi trống · Lần cuối thấy thịt: không nhớ nổi · Tình trạng: vẫn còn hy vọng, nhưng không nhiều ·",
+    "marqueeFree": " · Nhận ủng hộ mọi kích cỡ, kể cả 0đ · Một cú click cũng là một miếng cơm · Không có tiền không sao, có lòng là được · Nạn nhân vẫn đang đói ·",
     "musicTitle": "Nhạc nền phóng sự",
-    "musicOn": "Nhạc bi thương",
-    "musicOff": "Tắt nhạc",
-    "musicToast": "🎻 Đang phát nhạc phóng sự… hãy rơi nước mắt",
+    "musicOn": "Bật nhạc nền",
+    "musicOff": "Đang phát (chuẩn bị khăn giấy)",
+    "musicToast": "Nhạc đã lên. Phần còn lại là nước mắt của bạn 🎻",
     "musicError": "Trình duyệt không phát được nhạc 😢",
-    "darkTitle": "Chế độ tối",
-    "nightLabel": "Ban đêm",
-    "dayLabel": "Ban ngày",
-    "nightToast": "🌙 Đêm nay tôi lại đói…",
     "footerRights": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi. Mọi quyền được bảo lưu, trừ quyền được ăn no.",
     "footerAddress": "Trụ sở: trước tủ lạnh · Hotline: tiếng bụng kêu"
   },
   "exit": {
-    "title": "Bạn nỡ bỏ đi sao?",
-    "text": "Tôi vừa nghe tiếng bụng mình kêu. Nó gọi tên bạn đấy.",
+    "title": "Bạn định đi thật à?",
+    "text": "Không sao. Tôi quen bị rời đi lúc 2 giờ sáng rồi.",
     "stay": "Thôi được, ở lại nuôi",
     "free": "Nuôi kiểu 0đ thôi",
-    "leave": "Vẫn đi (đồ vô tâm 💔)",
+    "leave": "Vẫn đi",
     "leaveToast": "Đi đi… tôi sẽ ổn thôi (không ổn đâu) 💔"
   },
   "home": {
-    "kicker": "Lời kêu gọi khẩn cấp #001",
-    "dayTitleBefore": "Hãy cứu lấy ",
-    "dayTitleEm": "một tâm hồn",
-    "dayTitleAfter": " đang đói.",
-    "nightTitleBefore": "Đêm nay ",
-    "nightTitleEm": "tôi lại đói.",
-    "growl": "🌙 ọt… ọt ọt… (tiếng bụng lúc 2 giờ sáng)",
-    "ledeBefore": "Mỗi ngày, có ",
-    "ledeBold": "một người",
-    "ledeAfter": " phải đứng trước tủ lạnh trống trơn và tự hỏi “mình đã làm gì sai”. Người đó là tôi. Sự đóng góp của bạn sẽ thay đổi cuộc đời tôi trong khoảng 1–2 bữa.",
+    "kicker": "Một câu chuyện có thật",
+    "titleLine1": "Đêm nay,",
+    "titleLine2": "Tanh lại ",
+    "titleEm": "đói",
+    "titleAfter": ".",
+    "sub": "Không ai biết. Không ai hỏi. Chỉ có tiếng mưa ngoài hiên và tiếng bụng kêu trong căn phòng nhỏ.",
+    "timerLabel": "Bữa no gần nhất cách đây",
+    "timerPending": "—",
+    "timerFormat": "{hours} giờ {minutes} phút {seconds} giây",
+    "scrollCue": "Kéo xuống… nếu bạn đủ mạnh mẽ",
+    "photoLabel": "Bức ảnh cuối cùng",
+    "photoBar": "ĐÃ CHE · VÌ CHÚT TỰ TRỌNG CÒN SÓT LẠI",
+    "photoCaption": "lúc mở app ngân hàng",
+    "photoText1": "Đây là khoảnh khắc Tanh mở app ngân hàng ngày 26. Ảnh thật 100%. Ánh mắt ấy đã từng tin vào tương lai.",
+    "photoText2": "Giờ ánh mắt ấy chỉ tin vào mì tôm.",
+    "victimAlt": "Ảnh nạn nhân, đã được che bớt",
+    "letterLabel": "Lá thư không ai gửi",
+    "letter": [
+      "Gửi người lạ đang đọc những dòng này,",
+      "Tôi không biết bạn là ai. Có lẽ bạn đang nằm trên giường, lướt điện thoại, bụng no. Tôi mừng cho bạn. Thật đấy.",
+      "Còn tôi, tôi vừa đứng trước tủ lạnh lần thứ tư trong đêm. Lần nào mở ra cũng chỉ có một quả trứng và một chai tương ớt đã hết hạn từ hồi tôi còn tin vào tình yêu.",
+      "Tôi không xin nhiều. Chỉ một bữa cơm có thịt, mà lúc gọi món không phải nhìn cột giá trước.",
+      "Nếu bạn không giúp, tôi cũng không trách. Tôi sẽ chỉ lặng lẽ ăn gói mì cuối cùng, và nghĩ về bạn."
+    ],
+    "letterSign": "— Tanh, người vẫn đang chờ",
+    "diaryLabel": "Nhật ký một tháng",
+    "diaryTitle1": "Tiền lương đi qua đời tôi",
+    "diaryTitle2": "như một cơn gió.",
+    "diary": [
+      { "day": "Ngày 1", "text": "Lương về. Tôi cười. Tôi gọi trà sữa full topping. Tôi nghĩ mình giàu." },
+      { "day": "Ngày 3", "text": "Trả tiền nhà, tiền điện, tiền nợ chính mình của tháng trước." },
+      { "day": "Ngày 5", "text": "Bắt đầu nấu cơm ở nhà. Mua 30 gói mì “cho chắc”." },
+      { "day": "Ngày 15", "text": "Ăn mì không bỏ gói dầu. Để dành." },
+      { "day": "Ngày 22", "text": "Dùng gói dầu của ngày 15. Thấy mình là người biết lo xa." },
+      { "day": "Ngày 26 — hôm nay", "text": "Còn 1 gói mì, 1 quả trứng, và bạn." }
+    ],
     "stats": [
-      { "value": "3 ngày", "label": "chưa được uống trà sữa" },
-      { "value": "97%", "label": "bữa ăn là mì gói" },
-      { "value": "0đ", "label": "số dư hiện tại (gần đúng)" }
+      { "value": "97", "label": "bữa ăn là mì tôm (%)" },
+      { "value": "3", "label": "ngày không trà sữa" },
+      { "value": "0đ", "label": "số dư còn lại" }
     ],
-    "ctaDonate": "💝 Ủng hộ ngay",
-    "ctaFree": "🙏 Ủng hộ kiểu 0đ",
-    "noTexts": [
-      "Không ủng hộ",
-      "Bắt được tôi đi 😝",
-      "Hụt rồi!",
-      "Thôi mà…",
-      "Nghĩ lại đi 🥺",
-      "Nút này hỏng rồi",
-      "Chạy đâu cho thoát"
-    ],
-    "noModalTitle": "Lỗi hệ thống",
-    "noModalText": "Lựa chọn “Không ủng hộ” không tồn tại trong vũ trụ này. Vui lòng chọn lại.",
-    "noModalOk": "Vâng, tôi sẽ ủng hộ",
-    "noteLine1": "Xin hãy giúp tôi 🥺",
-    "noteLine2": "(ảnh thật 100%)",
-    "victimAlt": "Nạn nhân",
-    "photoBar": "ĐÃ CHE ĐỂ GIỮ THỂ DIỆN",
-    "captionVictim": "Nạn nhân:",
-    "captionAfter": "— ảnh chụp lúc nhìn số dư tài khoản.",
-    "stampLine1": "Đã xác minh",
-    "stampLine2": "nghèo",
-    "raisedLabel": "Đã quyên góp được",
+    "donateLabel": "Bạn có thể thay đổi cái kết",
+    "donateTitle1": "Một ly trà đá của bạn",
+    "donateTitle2": "là một ",
+    "donateTitleEm": "bữa tối",
+    "donateTitle3": " của tôi.",
+    "raisedLabel": "Đã nhận",
     "goalLabel": "Mục tiêu:",
     "percentReached": "Đạt {percent}%",
-    "timeLeft": "⏳ Còn lại: tới khi nào đủ thì thôi",
-    "storyTitle": "Hoàn cảnh nạn nhân",
-    "storySub": "Những con số khiến ai đọc cũng phải… lướt qua.",
-    "story": [
-      { "title": "Ví tiền rỗng", "text": "Trong ví hiện chỉ còn 1 tờ hóa đơn trà sữa cũ và rất nhiều kỷ niệm." },
-      { "title": "Lương về như trộm", "text": "Lương vừa về đã đi mất, để lại nạn nhân với 26 ngày còn lại trong tháng." },
-      { "title": "Ước mơ giản dị", "text": "Được ăn một bữa có thịt mà không phải nhìn giá trước khi gọi món." }
-    ],
-    "donateTitle": "Chọn cấp độ lòng tốt",
-    "donateSub": "Mỗi cấp độ đều được ghi nhận bằng lòng biết ơn vô hạn (và không hoàn tiền).",
+    "timeLeft": "Còn lại: tới khi nào đủ thì thôi",
+    "tiersLabel": "Chọn mức ủng hộ",
     "tiers": {
       "passerby": {
         "name": "Người qua đường",
-        "desc": "Nhìn thấy, thương nhẹ, đi tiếp.",
-        "toast": "Cảm ơn người lạ! Bạn vừa cứu tôi khỏi một bữa nhịn 🍜"
+        "desc": "Một gói mì có thêm quả trứng. Tôi sẽ nhớ bạn tới ngày mai.",
+        "toast": "Cảm ơn người lạ. Tối nay tôi có trứng."
       },
       "goodPerson": {
         "name": "Người tốt",
-        "desc": "Đủ một ly trà sữa full topping.",
-        "toast": "Người tốt ơi, trà sữa hôm nay là nhờ bạn 🧋"
+        "desc": "Một bữa cơm sườn. Lần đầu tiên trong tuần tôi được nhai.",
+        "toast": "Một bữa có thịt. Tôi sẽ ăn chậm để nhớ bạn lâu hơn."
       },
-      "bodhisattva": {
-        "name": "Bồ Tát sống",
-        "desc": "Công đức +9999, kiếp sau giàu.",
-        "toast": "Bồ Tát hiển linh! Công đức của bạn vừa +9999 🙏"
+      "benefactor": {
+        "name": "Ân nhân",
+        "desc": "Tôi sẽ kể về bạn cho con cháu. Nếu tôi sống được tới lúc có con cháu.",
+        "toast": "Ân nhân ơi, tên bạn sẽ được nhắc tới trong mâm cơm."
       },
       "adoptiveParent": {
         "name": "Bố mẹ nuôi",
-        "desc": "Chính thức nhận tôi làm con.",
-        "toast": "Con chào bố/mẹ ạ 🙇 Con hứa sẽ ngoan!"
+        "desc": "Chính thức nhận tôi làm con. Tôi sẽ gọi bạn là “ba/mẹ” không cần suy nghĩ.",
+        "toast": "Con chào bố/mẹ ạ. Con hứa sẽ ngoan."
       }
     },
-    "customPlaceholder": "Hoặc nhập số tiền tùy tâm…",
+    "customLabel": "Hoặc tự nhập:",
+    "customPlaceholder": "vd: 30000",
     "customAny": "Tùy tâm",
     "customRare": "Người tốt hiếm có",
     "customTycoon": "Đại gia ẩn danh",
-    "customToast": "Số tiền đẹp đấy! Quét QR thôi nào ✨",
+    "customToast": "Số tiền đẹp đấy. Quét QR thôi.",
     "amountTooSmall": "Nhập từ 2.000đ để tạo mã QR nhé.",
-    "freeCtaBold": "Hết tiền rồi à?",
-    "freeCtaText": "Không sao, vẫn có cách nuôi tôi mà bạn không mất đồng nào.",
-    "freeCtaAction": "Ủng hộ kiểu 0đ →",
-    "openQrLabel": "Mở mã QR chuyển khoản kích thước đầy đủ ở tab mới",
-    "qrAlt": "Mã QR chuyển khoản nuôi Tanh",
-    "qrCaption": "Quét bằng app ngân hàng bất kỳ · số tiền đã điền sẵn",
-    "qrLoading": "Đang chuẩn bị mã QR…",
-    "qrError": "Chưa tải được mã QR. Thử lại hoặc chuyển khoản theo thông tin bên dưới nhé.",
-    "qrRetry": "Tải lại mã QR",
     "bank": "Ngân hàng",
     "accountNumber": "Số tài khoản",
     "recipient": "Chủ tài khoản",
     "memoLabel": "Nội dung",
+    "amountLabel": "Số tiền",
     "copy": "Chép",
-    "copied": "Đã chép: {value}",
+    "copied": "Đã chép: {value}. Tay bạn ấm thật. 🕯️",
     "copyError": "Không chép được, bạn bôi đen thủ công nhé",
-    "donorsTitle": "🏆 Bảng vàng ân nhân",
-    "donorsSub": "Những con người vĩ đại đã giúp tôi sống thêm vài bữa. Tên các bạn sẽ được khắc ghi (trên trang web này).",
-    "donors": [
-      { "name": "Elon Mú", "amount": "1 tên lửa cũ", "note": "“Tiện tay mua luôn app ngân hàng của bạn. Số dư giờ là meme.”" },
-      { "name": "Mr Beat", "amount": "1 triệu đô*", "note": "*Chỉ trả nếu sống sót 100 ngày trong tủ lạnh" },
-      { "name": "Stewie Griffin", "amount": "1 tia tử thần", "note": "“Ăn đi, kẻ phàm trần. Còn có sức phục tùng ta.”" },
-      { "name": "Thanos", "amount": "½ tô cơm", "note": "“Cân bằng hoàn hảo, như mọi bữa ăn nên thế”" },
-      { "name": "Doraemon", "amount": "1 bánh rán", "note": "Lấy từ túi thần kỳ, hạn dùng đến thế kỷ 22" }
+    "payNote": "Quét xong, bạn có thể ngủ ngon. Tôi cũng vậy.",
+    "openQrLabel": "Mở mã QR chuyển khoản kích thước đầy đủ ở tab mới",
+    "qrAlt": "Mã QR chuyển khoản nuôi Tanh",
+    "qrCaption": "Quét bằng app ngân hàng bất kỳ · số tiền đã điền sẵn",
+    "qrLoading": "Đang chuẩn bị mã QR…",
+    "qrError": "Chưa tải được mã QR. Thử lại hoặc chuyển khoản theo thông tin bên cạnh nhé.",
+    "qrRetry": "Tải lại mã QR",
+    "freeCta": "🙏 Tôi không có tiền, nhưng có lòng (0đ)",
+    "refuse": "Tôi không muốn giúp",
+    "refuseSteps": [
+      { "title": "Không sao đâu.", "text": "Tôi hiểu mà. Ai cũng có cái khó riêng. Tôi sẽ tự lo được… chắc vậy." },
+      { "title": "Thật sự không sao.", "text": "Tôi vừa nhìn gói mì cuối cùng. Nó cũng nhìn lại tôi." },
+      { "title": "Ừ.", "text": "Mưa to hơn rồi. Chắc trời cũng buồn giùm tôi." },
+      { "title": "…", "text": "Tôi tắt đèn đây. Đỡ tốn điện." }
     ],
-    "faqTitle": "Câu hỏi thường gặp",
-    "faqSub": "Và những câu trả lời thành thật đến đau lòng.",
+    "refuseChange": "Thôi… để tôi giúp",
+    "refuseStill": "Vẫn không",
+    "donorsLabel": "Bảng vàng ân nhân",
+    "donorsTitle1": "Những tấm lòng vàng",
+    "donorsTitle2": "đã đi qua đời tôi.",
+    "donorsSub": "Họ đã đến. Họ đã hứa. Chưa ai chuyển khoản thành công.",
+    "donors": [
+      { "name": "Elon Mú", "note": "Tiện tay mua luôn app ngân hàng của bạn. Số dư giờ là meme.", "gift": "1 tên lửa cũ" },
+      { "name": "Mr Beat", "note": "Chỉ trả nếu sống sót 100 ngày trong tủ lạnh.", "gift": "1 triệu đô" },
+      { "name": "Stewie Griffin", "note": "Ăn đi, kẻ phàm trần. Còn có sức phục tùng ta.", "gift": "1 tia tử thần" },
+      { "name": "Thanos", "note": "Cân bằng hoàn hảo, như mọi bữa ăn nên thế.", "gift": "½ tô cơm" },
+      { "name": "Doraemon", "note": "Lấy từ túi thần kỳ, hạn dùng đến thế kỷ 22.", "gift": "1 bánh rán" },
+      { "name": "Thạch Sanh", "note": "Gửi niêu cơm thần, ăn mãi không hết. Đang bị hải quan giữ lại.", "gift": "1 niêu cơm (chờ thông quan)" },
+      { "name": "Bụt", "note": "Sao con khóc? … À, đói hả. Thôi Bụt cũng đang khó khăn.", "gift": "1 câu hỏi han" },
+      { "name": "Thần Đèn", "note": "Ba điều ước. Hai điều đã bị ngân hàng trả về vì sai nội dung chuyển khoản.", "gift": "1 điều ước còn lại" },
+      { "name": "Chú Cuội", "note": "Đã chuyển từ cung trăng. Giao dịch đang xử lý, dự kiến rằm tháng sau.", "gift": "1 lời hứa" },
+      { "name": "Sơn Tinh", "note": "Voi chín ngà, gà chín cựa, ngựa chín hồng mao. Phí ship hơi cao.", "gift": "Chưa giao được" },
+      { "name": "Con nhà người ta", "note": "Đã ủng hộ 500k. Kèm theo một lời so sánh.", "gift": "Áp lực tinh thần" }
+    ],
+    "donorYouName": "Bạn?",
+    "donorYouNote": "Chỗ này vẫn để trống. Người đầu tiên chuyển khoản thật sẽ có tên ở đây.",
+    "donorYouAction": "Lên bảng vàng ↑",
+    "faqLabel": "Những câu hỏi trong đêm",
     "faq": [
       {
-        "question": "Tiền ủng hộ sẽ được dùng vào việc gì?",
-        "answer": "100% được dùng cho mục đích nhân đạo: cho tôi ăn. Báo cáo tài chính được công khai dưới dạng ảnh chụp đồ ăn."
+        "question": "Tiền đi đâu?",
+        "answer": "Vào bụng. 100%. Báo cáo tài chính là ảnh chụp mâm cơm."
       },
       {
-        "question": "Quỹ có giấy phép hoạt động không?",
+        "question": "Có phải lừa đảo không?",
+        "answer": "Không. Đây là xin tiền công khai, minh bạch và trơ trẽn. Bạn biết rõ mình đang nuôi ai."
+      },
+      {
+        "question": "Quỹ có giấy phép không?",
         "answer": "Không. Nhưng có giấy phép lái xe, nếu điều đó giúp bạn yên tâm hơn."
       },
       {
-        "question": "Tôi có được hoàn tiền không?",
-        "answer": "Bạn sẽ được hoàn lại bằng một lời cảm ơn chân thành, có thể kèm sticker."
-      },
-      {
-        "question": "Đây có phải lừa đảo không?",
-        "answer": "Không, đây là trang xin tiền công khai, minh bạch và trơ trẽn. Bạn hoàn toàn biết mình đang nuôi ai."
+        "question": "Có hoàn tiền không?",
+        "answer": "Không. Nhưng có một lời cảm ơn thật lòng, và có thể kèm sticker."
       }
     ]
   },
   "free": {
-    "back": "← Quay lại trang xin tiền",
-    "kicker": "Chương trình “Ủng hộ kiểu 0đ”",
-    "titleBefore": "Danh sách ",
-    "titleEm": "việc tốt 0đ",
-    "lede": "Bạn không có tiền? Tôi cũng vậy. Ta hiểu nhau. Hoàn thành các nhiệm vụ bên dưới để nuôi tôi mà ví bạn không vơi đi đồng nào.",
-    "meritCounter": "🪷 Công đức của bạn:",
-    "meritLabel": "🪷 +{merit} công đức",
-    "meritToast": "Công đức +{merit}! Kiếp sau bạn sẽ giàu 🪷",
+    "back": "← Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi",
+    "barNote": "Chương trình ủng hộ 0đ",
+    "label": "Dành cho người cũng đang khó",
+    "title1": "Bạn không có tiền.",
+    "title2": "Tôi cũng ",
+    "titleEm": "không",
+    "titleAfter": ".",
+    "sub": "Vậy thì mình nghèo cùng nhau. Nhưng bạn vẫn có thể giúp tôi một bữa, mà không mất đồng nào. Mỗi việc nhỏ bạn làm là một ngọn nến được thắp lên trong căn phòng tối này.",
+    "meritUnit": "điểm công đức",
+    "meritAria": "Điểm công đức của bạn",
+    "levelLabel": "Danh hiệu:",
+    "nextLevel": "còn {points} điểm nữa để thành “{level}”",
+    "maxLevel": "đã đạt cảnh giới cao nhất",
+    "levels": [
+      "Người qua đường lạnh lùng",
+      "Người có chút lòng",
+      "Người tốt bụng",
+      "Ân nhân 0 đồng",
+      "Bồ Tát miễn phí",
+      "Bố mẹ nuôi tinh thần"
+    ],
+    "foods": [
+      "chưa đủ một hạt cơm",
+      "1 gói gia vị mì",
+      "1 quả trứng",
+      "1 gói mì có trứng",
+      "1 ổ bánh mì pate",
+      "1 đĩa cơm tấm (trong tưởng tượng)"
+    ],
+    "tasksLabel": "Ba cách cứu đói miễn phí",
+    "tasksTitle": "Chỉ cần một ngón tay.",
+    "meritLabel": "+{merit} điểm",
+    "meritToast": "+{merit} điểm công đức. Bụng tôi vừa kêu nhỏ lại một chút.",
+    "alreadyDone": "Bạn đã làm việc này rồi. Tôi vẫn nhớ. 🥺",
     "tasks": {
       "shopee": {
-        "title": "Mua món bạn vốn định mua trên Shopee",
-        "desc": "Đằng nào cũng mua, mua qua link này thì tôi có cơm.",
-        "cta": "Đi Shopee"
+        "title": "Mua sắm qua link của tôi",
+        "desc": "Đằng nào bạn cũng mua. Đi qua cửa nhà tôi, giá vẫn thế, nhưng tôi được vài đồng hoa hồng để mua quả trứng.",
+        "cta": "Mở Shopee"
+      },
+      "share": {
+        "title": "Gửi cho một người bạn giàu",
+        "desc": "Ai cũng có một người bạn như thế. Bạn biết là ai rồi đấy. Gửi cho họ đi, rồi im lặng chờ.",
+        "cta": "Chia sẻ trang"
+      },
+      "candle": {
+        "title": "Thắp một ngọn nến",
+        "desc": "Giữ nút 3 giây và nghĩ về tôi. Không giúp gì về dinh dưỡng, nhưng ấm lòng.",
+        "cta": "Giữ để thắp nến"
       },
       "tiktok": {
         "title": "Săn deal TikTok Shop",
@@ -189,22 +241,86 @@
         "title": "Tải app và đăng ký tài khoản",
         "desc": "Mất 2 phút của bạn, cứu 1 bữa của tôi.",
         "cta": "Đăng ký"
-      },
-      "share": {
-        "title": "Chia sẻ trang này cho một người giàu",
-        "desc": "Bạn không có tiền, nhưng bạn có bạn bè có tiền.",
-        "cta": "Chép link"
       }
     },
-    "shareCopied": "Đã chép link! Gửi cho người giàu nhất bạn quen nhé",
+    "candleAria": "Giữ 3 giây để thắp nến",
+    "candleStages": [
+      "Đang quẹt diêm…",
+      "Lửa đang bén…",
+      "Sắp cháy rồi, đừng buông…",
+      "Cháy rồi!"
+    ],
+    "candleDone": "Nến đã thắp 🕯️",
+    "candleLetGo": "Đừng buông tay tôi… 🥺",
+    "candleAlready": "Nến của bạn vẫn đang cháy. 🕯️",
+    "shareTitle": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi",
+    "shareText": "Có một người đang đói. Bạn giúp được không? 🥺",
+    "shareCopied": "Đã chép link. Gửi cho người bạn giàu nhất của bạn nhé.",
     "shareError": "Hãy chép link trên thanh địa chỉ và gửi đi nhé",
-    "productsTitle": "Có gì trên kệ?",
-    "productsSub": "Thấy món nào thú vị thì mở xem. Sản phẩm mở ở tab mới.",
+    "shelfLabel": "Có gì trên kệ?",
+    "shelfTitle1": "Những món đồ tôi ngắm",
+    "shelfTitle2": "nhưng chưa bao giờ ",
+    "shelfTitleEm": "dám mua",
+    "shelfTitleAfter": ".",
+    "shelfSub": "Bạn mua giùm cho bạn nhé. Tôi chỉ đứng ngoài nhìn qua lớp kính. Mỗi lần xem: +{merit} điểm.",
+    "categoriesLabel": "Lọc theo loại đồ",
+    "categories": {
+      "all": "Tất cả",
+      "keyboard": "Bàn phím",
+      "tech": "Công nghệ",
+      "clothes": "Quần áo",
+      "home": "Gia dụng"
+    },
+    "notes": {
+      "keyboardRgb": "Gõ code trên phím này chắc bug tự sửa.",
+      "keyboardF61": "Tiếng lạch cạch nghe như tiền rơi.",
+      "keyboardF61Alt": "Mua hai cái, một để gõ, một để ngắm.",
+      "wifi5g": "Có mạng thì còn lướt được web xin tiền.",
+      "jerseyVn": "Mặc vào đói cũng thấy tự hào.",
+      "menSet": "Đi xin cũng phải chỉn chu.",
+      "sportSet": "Chạy bộ cho quên cơn đói.",
+      "menSetAlt": "Trông giàu là bước đầu tiên để giàu.",
+      "sportShorts": "Thoáng mát, hợp với túi tiền thoáng.",
+      "menSetNew": "Áo mới, nỗi buồn cũ.",
+      "sportSetAlt": "Mặc đi phỏng vấn tăng lương.",
+      "sportShirt": "Thấm mồ hôi, không thấm nước mắt.",
+      "fashion": "Đẹp trai không mài ra ăn được, nhưng vẫn muốn.",
+      "tissueCombo": "Đọc trang chính xong bạn sẽ cần.",
+      "micellar": "Tẩy được lớp trang điểm, không tẩy được nỗi nghèo.",
+      "toiletPaper": "Món đồ duy nhất trong nhà tôi không bao giờ thiếu… à không.",
+      "tissueBox": "Để khăn giấy có chỗ ở. Hơn cả tôi."
+    },
     "viewProduct": "Xem trên Shopee",
     "emptyProducts": "Kệ đang trống. Bạn ghé lại sau nhé.",
     "disclaimerBold": "Minh bạch:",
-    "disclaimerText": "Các nút trên là link tiếp thị liên kết (affiliate). Bạn mua hàng với giá như bình thường, không mất thêm đồng nào. Tôi được sàn trả vài nghìn tiền hoa hồng, đủ để mua thêm một gói mì.",
-    "backToQrQuestion": "Đổi ý muốn nuôi bằng tiền thật?",
-    "backToQr": "💝 Quay lại quét QR"
+    "disclaimerText": "các link Shopee trên đây là link tiếp thị liên kết (affiliate). Bạn trả đúng giá bình thường, tôi nhận một khoản hoa hồng nhỏ, đủ để không phải ăn mì không người lái.",
+    "receiptTitle": "HÓA ĐƠN CÔNG ĐỨC",
+    "receiptOrg": "Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi",
+    "receiptAddress": "Địa chỉ: trước tủ lạnh",
+    "receiptTotal": "TỔNG",
+    "receiptPoints": "{points} điểm",
+    "receiptMoney": "Thành tiền",
+    "receiptMoneyValue": "0đ",
+    "receiptConvert": "Quy đổi",
+    "receiptLabels": {
+      "shopee": "Mua sắm qua link",
+      "share": "Chia sẻ cho bạn giàu",
+      "candle": "Thắp nến nghĩ về tôi",
+      "shelf": "Ngắm đồ giùm tôi",
+      "tiktok": "Săn deal TikTok",
+      "lazada": "Ghé Lazada",
+      "signup": "Đăng ký app"
+    },
+    "receiptEmpty": "Chưa có gì cả. Nhưng tôi vẫn chờ.",
+    "receiptLow": "Cảm ơn bạn. Tôi cảm nhận được hơi ấm, dù chưa phải hơi cơm.",
+    "receiptHigh": "Bạn là người tốt. Nếu bạn có thêm 10.000đ thì bạn là người tốt hơn nữa.",
+    "endLabel": "Nếu bạn đã đọc đến đây",
+    "endTitle1": "…thì có lẽ trong túi bạn",
+    "endTitle2": "vẫn còn ",
+    "endTitleEm": "một chút gì đó",
+    "endTitleAfter": ".",
+    "endSub": "Mười nghìn thôi. Một gói mì có trứng. Tôi hứa sẽ ăn chậm để nhớ bạn lâu hơn.",
+    "endDonate": "💝 Thôi, tôi chuyển khoản thật",
+    "endHome": "Quay về trang chính"
   }
 }

@@ -2,9 +2,9 @@ import { useEffect, type ReactNode } from "react";
 import { createPortal } from "react-dom";
 
 interface ModalProps {
-  big: string;
+  big?: string;
   title: string;
-  text: string;
+  text: ReactNode;
   onClose: () => void;
   children: ReactNode;
 }
@@ -30,7 +30,11 @@ export default function Modal({ big, title, text, onClose, children }: ModalProp
       }}
     >
       <div className="modal-card">
-        <div className="big">{big}</div>
+        {big ? (
+          <div className="big" aria-hidden="true">
+            {big}
+          </div>
+        ) : null}
         <h3>{title}</h3>
         <p>{text}</p>
         <div className="row">{children}</div>

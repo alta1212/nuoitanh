@@ -1,16 +1,13 @@
-import type { MouseEvent, ReactNode } from "react";
+import type { ReactNode } from "react";
 
 interface TaskCardProps {
   icon: ReactNode;
   title: string;
   description: string;
   meritLabel: string;
-  cta: string;
   done: boolean;
-  /** Có href thì là link mở tab mới, không có thì là nút. */
-  href?: string;
-  clampDescription?: boolean;
-  onActivate: (event: MouseEvent) => void;
+  /** Nút hoặc link để làm việc tốt. */
+  children: ReactNode;
 }
 
 export default function TaskCard({
@@ -18,35 +15,18 @@ export default function TaskCard({
   title,
   description,
   meritLabel,
-  cta,
   done,
-  href,
-  clampDescription,
-  onActivate,
+  children,
 }: TaskCardProps) {
   return (
     <div className={`task${done ? " done" : ""}`}>
-      <div className="tick">{done ? "✅" : icon}</div>
-      <div>
-        <h3>{title}</h3>
-        <p className={clampDescription ? "clamp" : undefined}>{description}</p>
-        <span className="pts">{meritLabel}</span>
+      <div className="ic" aria-hidden="true">
+        {icon}
       </div>
-      {href ? (
-        <a
-          className="btn btn-red go"
-          href={href}
-          target="_blank"
-          rel="sponsored noopener noreferrer"
-          onClick={onActivate}
-        >
-          {cta} →
-        </a>
-      ) : (
-        <button className="btn btn-red go" type="button" onClick={onActivate}>
-          {cta}
-        </button>
-      )}
+      <h3>{title}</h3>
+      <p>{description}</p>
+      <span className="pt">{meritLabel}</span>
+      {children}
     </div>
   );
 }

@@ -10,25 +10,19 @@ export default function ProgressCard({ locale }: { locale: Locale }) {
   });
 
   return (
-    <div className="progress-card">
-      <div className="progress-head">
-        <div>
-          {t.raisedLabel} <b>{formatCurrency(fund.raised, locale)}</b>
-        </div>
-        <div style={{ color: "var(--muted)" }}>
-          {t.goalLabel}{" "}
-          <b style={{ color: "var(--ink)", fontSize: 18 }}>
-            {formatCurrency(fund.goal, locale)}
-          </b>
-        </div>
+    <>
+      <div className="prog">
+        <i style={{ width: `${Math.max(percent, 0.6)}%` }} />
       </div>
-      <div className="bar-outer">
-        <div className="bar-inner" style={{ width: `${Math.max(percent, 0.8)}%` }} />
+      <div className="prog-meta">
+        <span>
+          {t.raisedLabel} {formatCurrency(fund.raised, locale)} · {" "}
+          {t.percentReached.replace("{percent}", percentText)}
+        </span>
+        <span>
+          {t.goalLabel} {formatCurrency(fund.goal, locale)}
+        </span>
       </div>
-      <div className="progress-foot">
-        <span>{t.percentReached.replace("{percent}", percentText)}</span>
-        <span>{t.timeLeft}</span>
-      </div>
-    </div>
+    </>
   );
 }

@@ -1,4 +1,3 @@
-import { useDarkMode } from "../hooks/useDarkMode";
 import { useSadMusic } from "../hooks/useSadMusic";
 import { messages } from "../i18n";
 import type { Locale } from "../utils/locale";
@@ -7,66 +6,58 @@ import LanguageSwitcher from "./LanguageSwitcher";
 
 interface SiteHeaderProps {
   locale: Locale;
+  /** Trang 0đ: thay tên quỹ bằng link quay lại, và không có nhạc nền. */
+  freeFeed?: boolean;
   onLocaleChange: (locale: Locale) => void;
 }
 
-export default function SiteHeader({ locale, onLocaleChange }: SiteHeaderProps) {
+export default function SiteHeader({ locale, freeFeed, onLocaleChange }: SiteHeaderProps) {
   const t = messages[locale].common;
+  const free = messages[locale].free;
   const { toast } = useFx();
-  const { dark, toggle: toggleDark } = useDarkMode();
-  const { playing, toggle: toggleMusic } = useSadMusic();
+  const { playing, toggle } = useSadMusic();
 
   function onMusicClick() {
     try {
-      if (toggleMusic()) toast(t.musicToast);
+      if (toggle()) toast(t.musicToast);
     } catch {
       toast(t.musicError);
     }
   }
 
   return (
-    <header className="nav">
-      <div className="wrap">
+    <header className="bar">
+      {freeFeed ? (
         <a className="brand" href="/" aria-label={t.homeLabel}>
-          <div className="seal">QT</div>
-          <div>
-            <b>
-              {t.brandLine1}
-              <br />
-              {t.brandLine2}
-            </b>
-            <small>{t.brandCaption}</small>
-          </div>
+          {free.back}
         </a>
-        <nav className="nav-actions" aria-label={t.navigationLabel}>
+      ) : (
+        <a className="brand" href="/" aria-label={t.homeLabel}>
+          {t.brand}
+        </a>
+      )}
+      <nav className="bar-tools" aria-label={t.navigationLabel}>
+        {freeFeed ? (
+          <span>{free.barNote}</span>
+        ) : (
           <button
-            className={`icon-btn music${playing ? " on" : ""}`}
+            className={`ghost-btn${playing ? " on" : ""}`}
             type="button"
             title={t.musicTitle}
+            aria-pressed={playing}
             onClick={onMusicClick}
           >
-            <span>🎻</span>
-            <span className="eq">
+            <span aria-hidden="true">🎻</span>
+            <span className="eq" aria-hidden="true">
               <i />
               <i />
               <i />
             </span>
-            <span className="label">{playing ? t.musicOff : t.musicOn}</span>
+            <span>{playing ? t.musicOff : t.musicOn}</span>
           </button>
-          <button
-            className={`icon-btn${dark ? " on" : ""}`}
-            type="button"
-            title={t.darkTitle}
-            onClick={() => {
-              if (toggleDark()) toast(t.nightToast);
-            }}
-          >
-            <span>{dark ? "☀️" : "🌙"}</span>
-            <span className="label">{dark ? t.dayLabel : t.nightLabel}</span>
-          </button>
-          <LanguageSwitcher locale={locale} onChange={onLocaleChange} />
-        </nav>
-      </div>
+        )}
+        <LanguageSwitcher locale={locale} onChange={onLocaleChange} />
+      </nav>
     </header>
   );
 }

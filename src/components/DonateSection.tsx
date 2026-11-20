@@ -1,15 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { defaultTier, fund, tiers, type TierId } from "../data/fund";
 import { messages } from "../i18n";
-import {
-  formatAmountInput,
-  normalizeAmountInput,
-  parseAmount,
-} from "../utils/amount";
+import { formatAmountInput, normalizeAmountInput, parseAmount } from "../utils/amount";
 import { formatCurrency, type Locale } from "../utils/locale";
 import { freePagePath } from "../utils/navigation";
 import { useFx } from "./FxProvider";
 import MealQr from "./MealQr";
+import ProgressCard from "./ProgressCard";
+import RefuseFlow from "./RefuseFlow";
+import Reveal from "./Reveal";
 
 const qrBase = `https://img.vietqr.io/image/${fund.bankCode}-${fund.accountNo}-compact.png`;
 
@@ -31,12 +30,11 @@ export default function DonateSection({ locale }: { locale: Locale }) {
   // null: đang nhập dở dưới mức tối thiểu; 0: tùy tâm, người chuyển tự điền số tiền.
   const amount = custom ? parseAmount(custom) : (tier?.amount ?? 0);
   const typed = Number(custom) || 0;
-  const label = tier
-    ? t.tiers[tier.id].name
-    : typed >= 1_000_000
-      ? t.customTycoon
-      : typed >= 200_000
-        ? t.customRare
+  const amountText =
+    amount === null
+      ? formatCurrency(typed, locale)
+      : amount > 0
+        ? formatCurrency(amount, locale)
         : t.customAny;
 
   function onCustomInput(value: string) {
@@ -64,58 +62,55 @@ export default function DonateSection({ locale }: { locale: Locale }) {
 
   return (
     <section id="donate">
-      <h2 className="sec-title">{t.donateTitle}</h2>
-      <p className="sec-sub">{t.donateSub}</p>
-      <div className="donate">
-        <div>
-          <div className="tiers">
-            {tiers.map((item) => (
-              <button
-                className={`tier${item.id === tierId ? " active" : ""}`}
-                type="button"
-                aria-pressed={item.id === tierId}
-                key={item.id}
-                onClick={(event) => {
-                  clearTimeout(customTimer.current);
-                  setTierId(item.id);
-                  setCustom("");
-                  toast(t.tiers[item.id].toast);
-                  burst(item.fx, event);
-                }}
-              >
-                <div className="em">{item.em}</div>
-                <b>{t.tiers[item.id].name}</b>
-                <div className="amt">{formatCurrency(item.amount, locale)}</div>
-                <small>{t.tiers[item.id].desc}</small>
-              </button>
-            ))}
-          </div>
-          <label className="custom">
-            <input
-              inputMode="numeric"
-              autoComplete="off"
-              placeholder={t.customPlaceholder}
-              aria-label={t.customPlaceholder}
-              value={formatAmountInput(custom, locale === "vi" ? "." : ",")}
-              onChange={(event) => onCustomInput(event.target.value)}
-            />
-            <span>{locale === "vi" ? "đ" : "₫"}</span>
-          </label>
-          <div className="free-cta">
-            <p>
-              <b>{t.freeCtaBold}</b> {t.freeCtaText}
-            </p>
-            <a
-              className="btn btn-ghost"
-              href={freePagePath}
-              style={{ padding: "10px 16px", fontSize: 14 }}
+      <Reveal className="wrap narrow">
+        <div className="label">{t.donateLabel}</div>
+        <h2>
+          {t.donateTitle1}
+          <br />
+          {t.donateTitle2}
+          <em>{t.donateTitleEm}</em>
+          {t.donateTitle3}
+        </h2>
+
+        <ProgressCard locale={locale} />
+
+        <div className="tiers" role="radiogroup" aria-label={t.tiersLabel}>
+          {tiers.map((item) => (
+            <button
+              className={`tier${item.id === tierId ? " sel" : ""}`}
+              type="button"
+              role="radio"
+              aria-checked={item.id === tierId}
+              key={item.id}
+              onClick={(event) => {
+                clearTimeout(customTimer.current);
+                setTierId(item.id);
+                setCustom("");
+                toast(t.tiers[item.id].toast);
+                burst(item.fx, event);
+              }}
             >
-              {t.freeCtaAction}
-            </a>
-          </div>
+              <span className="nm">{t.tiers[item.id].name}</span>
+              <span className="amt">{formatCurrency(item.amount, locale)}</span>
+              <span className="ds">{t.tiers[item.id].desc}</span>
+            </button>
+          ))}
         </div>
-        <div className="qr-side">
-          <div className="qr-tier">{label}</div>
+
+        <label className="custom">
+          {t.customLabel}
+          <input
+            inputMode="numeric"
+            autoComplete="off"
+            placeholder={t.customPlaceholder}
+            aria-label={t.customPlaceholder}
+            value={formatAmountInput(custom, locale === "vi" ? "." : ",")}
+            onChange={(event) => onCustomInput(event.target.value)}
+          />
+          <span>{locale === "vi" ? "đ" : "₫"}</span>
+        </label>
+
+        <div className="pay">
           {amount === null ? (
             <div className="qr-box">
               <div className="qr-message" role="status">
@@ -125,44 +120,49 @@ export default function DonateSection({ locale }: { locale: Locale }) {
           ) : (
             <MealQr key={amount} url={buildQrUrl(amount)} locale={locale} />
           )}
-          <div className="qr-amount">
-            {amount === null
-              ? formatCurrency(typed, locale)
-              : amount > 0
-                ? formatCurrency(amount, locale)
-                : t.customAny}
-          </div>
-          <div className="qr-caption">{t.qrCaption}</div>
-          <div className="acct">
-            <div>
+          <div className="pay-info">
+            <div className="pay-row">
               <span>{t.bank}</span>
-              <b>{fund.bankName}</b>
+              <span className="val">{fund.bankName}</span>
             </div>
-            <div>
+            <div className="pay-row">
               <span>{t.accountNumber}</span>
-              <b>
-                <span style={{ color: "var(--ink)" }}>{fund.accountNo}</span>
+              <span className="val">
+                {fund.accountNo}
                 <button className="copy" type="button" onClick={() => copy(fund.accountNo)}>
                   {t.copy}
                 </button>
-              </b>
+              </span>
             </div>
-            <div>
+            <div className="pay-row">
               <span>{t.recipient}</span>
-              <b>{fund.accountName}</b>
+              <span className="val">{fund.accountName}</span>
             </div>
-            <div>
+            <div className="pay-row">
               <span>{t.memoLabel}</span>
-              <b>
-                <span style={{ color: "var(--ink)" }}>{fund.memo}</span>
+              <span className="val">
+                {fund.memo}
                 <button className="copy" type="button" onClick={() => copy(fund.memo)}>
                   {t.copy}
                 </button>
-              </b>
+              </span>
             </div>
+            <div className="pay-row">
+              <span>{t.amountLabel}</span>
+              <span className="val">{amountText}</span>
+            </div>
+            <p className="pay-note">{t.payNote}</p>
+            <p className="qr-caption">{t.qrCaption}</p>
           </div>
         </div>
-      </div>
+
+        <div className="btns">
+          <a className="btn ghost" href={freePagePath}>
+            {t.freeCta}
+          </a>
+          <RefuseFlow locale={locale} />
+        </div>
+      </Reveal>
     </section>
   );
 }

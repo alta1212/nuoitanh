@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="index, follow, max-image-preview:large" />
     <meta name="google-adsense-account" content="ca-pub-1113756679580340" />
-    <meta name="theme-color" content="#f6f1e7" />
-    <meta name="description" content="Trang xin tiền công khai, minh bạch và trơ trẽn. Quét QR nuôi Tanh một bữa hoặc ủng hộ kiểu 0đ." />
+    <meta name="theme-color" content="#0d0f12" />
+    <meta name="description" content="Một câu chuyện có thật, kết thúc có hậu hay không là tùy bạn. Quét QR mời Tanh một bữa, hoặc ủng hộ kiểu 0đ." />
     <meta name="keywords" content="nuoi tanh, nuoi tuan anh, nuôi tuấn anh,nuoitanh, nuôi Tanh, nuôi tôi, nuôi tanh, nuôi em, dự án nuôi em, nuoitanh.com, nuôi miễn phí, mời Tanh ăn cơm, QR Nuôi Tanh" />
     <meta name="msvalidate.01" content="0AF954739C4F4B521BC24B8ECEF3C3CB" />
     <meta name="author" content="Tanh" />
     <link rel="canonical" href="https://nuoitanh.com/" />
     <link rel="icon" href="/images/favicon.svg" type="image/svg+xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;0,900;1,700&family=Patrick+Hand&display=swap&subset=vietnamese" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300;400;600&family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Special+Elite&display=swap&subset=vietnamese" rel="stylesheet" />
     <meta property="og:site_name" content="Nuôi Tanh" />
-    <meta property="og:title" content="Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi | Nuôi Tanh" />
-    <meta property="og:description" content="Trang xin tiền công khai, minh bạch và trơ trẽn. Quét QR nuôi Tanh một bữa hoặc ủng hộ kiểu 0đ." />
+    <meta property="og:title" content="Đêm nay, Tanh lại đói | Nuôi Tanh" />
+    <meta property="og:description" content="Một câu chuyện có thật, kết thúc có hậu hay không là tùy bạn. Quét QR mời Tanh một bữa, hoặc ủng hộ kiểu 0đ." />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://nuoitanh.com/" />
     <meta property="og:locale" content="vi_VN" />
@@ -26,11 +27,11 @@
     <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi: hãy cứu lấy một tâm hồn đang đói" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi | Nuôi Tanh" />
+    <meta name="twitter:title" content="Đêm nay, Tanh lại đói | Nuôi Tanh" />
     <meta name="twitter:description" content="Nuôi Tanh miễn phí hoặc quét mã QR để mời Tanh một bữa cơm." />
     <meta name="twitter:image" content="https://nuoitanh.com/images/og-image.png" />
     <meta name="twitter:image:alt" content="Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi: hãy cứu lấy một tâm hồn đang đói" />
-    <title>Quỹ Cứu Trợ Khẩn Cấp Cho Chính Tôi | Nuôi Tanh</title>
+    <title>Đêm nay, Tanh lại đói | Nuôi Tanh</title>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -44,14 +45,6 @@
     </script>
   </head>
   <body>
-    <script>
-      // Bật dark mode trước khi vẽ để HTML prerender (luôn là nền sáng) không bị nháy.
-      try {
-        var saved = localStorage.getItem("dark");
-        var hour = new Date().getHours();
-        if (saved === "1" || (saved === null && (hour >= 22 || hour < 5))) document.body.classList.add("dark");
-      } catch (e) {}
-    </script>
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

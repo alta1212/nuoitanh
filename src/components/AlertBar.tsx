@@ -1,7 +1,7 @@
 export default function AlertBar({ text }: { text: string }) {
   return (
-    <div className="alert">
-      <div className="track">{text.repeat(6)}</div>
+    <div className="ticker" aria-hidden="true">
+      <span className="track">{text.repeat(6)}</span>
     </div>
   );
 }

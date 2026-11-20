@@ -56,11 +56,10 @@ export default function ExitIntentModal({ locale }: { locale: Locale }) {
   if (!open) return null;
 
   return (
-    <Modal big="🥺" title={t.title} text={t.text} onClose={() => setOpen(false)}>
+    <Modal big="🕯️" title={t.title} text={t.text} onClose={() => setOpen(false)}>
       <button
-        className="btn btn-red"
+        className="btn main"
         type="button"
-        style={{ justifyContent: "center" }}
         onClick={() => {
           setOpen(false);
           goDonate();
@@ -68,7 +67,7 @@ export default function ExitIntentModal({ locale }: { locale: Locale }) {
       >
         {t.stay}
       </button>
-      <a className="btn btn-ghost" href={freePagePath} style={{ justifyContent: "center" }}>
+      <a className="btn ghost" href={freePagePath}>
         {t.free}
       </a>
       <button
